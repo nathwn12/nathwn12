@@ -2,13 +2,13 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0E0E0D&height=170&section=header&text=NATHANIEL%20NIKOLAI%20LADERO&fontSize=38&fontColor=F2F2EF&fontFamily=IBM+Plex+Mono&fontAlignY=38&desc=C%23%20%2F%20ASP.NET%20Core%20%2F%20fintech&descAlignY=68&descSize=16&descFontFamily=IBM+Plex+Mono&animation=fadeIn" alt="NATHANIEL NIKOLAI LADERO — C# / ASP.NET Core / fintech" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=170&section=header&text=NATHANIEL%20NIKOLAI%20LADERO&fontSize=38&fontColor=F2F2EF&fontFamily=IBM+Plex+Mono&fontAlignY=38&desc=C%23%20%2F%20ASP.NET%20Core%20%2F%20fintech&descAlignY=68&descSize=16&descFontFamily=IBM+Plex+Mono&animation=fadeIn" alt="NATHANIEL NIKOLAI LADERO — C# / ASP.NET Core / fintech" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=16&duration=3000&pause=900&color=E03C00&center=true&vCenter=true&width=560&height=28&lines=Backend+Developer+%E2%80%94+C%23+%2F+ASP.NET+Core;Fintech+%E2%80%94+payments%2C+cash+management%2C+access+control;OpenCode+plugins%2C+Windows+utilities%2C+audio+tooling&repeat=true" alt="Backend Developer — C# / ASP.NET Core. Fintech — payments, cash management, access control. OpenCode plugins, Windows utilities, audio tooling." />
+<img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=16&duration=3000&pause=900&color=C9D1D9&center=true&vCenter=true&width=560&height=28&lines=Backend+Developer+%E2%80%94+C%23+%2F+ASP.NET+Core;Fintech+%E2%80%94+payments%2C+cash+management%2C+access+control;OpenCode+plugins%2C+Windows+utilities%2C+audio+tooling&repeat=true" alt="Backend Developer — C# / ASP.NET Core. Fintech — payments, cash management, access control. OpenCode plugins, Windows utilities, audio tooling." />
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=FF4D00&height=8&section=header" alt="" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=30363D&height=6&section=header" alt="" width="100%" />
 
 ## $ whoami
 
@@ -20,10 +20,10 @@ by what you can check: the day job is proprietary, the repositories are not.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=nathwn12&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0E0E0D&title_color=FF4D00&icon_color=FF4D00&text_color=F2F2EF&hide_rank=true&hide=stars" alt="nathwn12's GitHub stats — commits, pull requests and issues across public repositories" height="180" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nathwn12&layout=compact&langs_count=8&hide_border=true&bg_color=0E0E0D&title_color=FF4D00&text_color=F2F2EF" alt="Most-used languages across nathwn12's public repositories" height="180" />
+<img src="https://github-readme-stats.vercel.app/api?username=nathwn12&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=C9D1D9&icon_color=8B949E&text_color=F2F2EF&hide_rank=true&hide=stars" alt="nathwn12's GitHub stats — commits, pull requests and issues across public repositories" height="180" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nathwn12&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=C9D1D9&text_color=F2F2EF" alt="Most-used languages across nathwn12's public repositories" height="180" />
 
-<img src="https://streak-stats.demolab.com?user=nathwn12&background=0E0E0D&border=30363D&stroke=FF4D00&ring=FF4D00&fire=FF4D00&currStreakNum=F2F2EF&sideNums=F2F2EF&currStreakLabel=FF4D00&sideLabels=A3A39C&dates=8B949E&hide_border=true" alt="nathwn12's contribution streak" />
+<img src="https://streak-stats.demolab.com?user=nathwn12&background=0D1117&border=30363D&stroke=8B949E&ring=8B949E&fire=C9D1D9&currStreakNum=F2F2EF&sideNums=F2F2EF&currStreakLabel=8B949E&sideLabels=A3A39C&dates=8B949E&hide_border=true" alt="nathwn12's contribution streak" />
 
 </div>
 
@@ -42,7 +42,7 @@ pipelines, and Nginx on Ubuntu.
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=FF4D00&height=8&section=header" alt="" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=30363D&height=6&section=header" alt="" width="100%" />
 
 ## $ ls --public repos/
 
@@ -63,7 +63,7 @@ own README.
 | [`MPO-GPU-FIX`](https://github.com/nathwn12/MPO-GPU-FIX) | C# | `fork` `no license` | Maintained fork of RedDot-3ND7355/MPO-GPU-FIX; ported to .NET 10, plus registry null guards and an operator-precedence fix. |
 | [`NoMoreBorder`](https://github.com/nathwn12/NoMoreBorder) | Python | `fork` `MIT` | Fork of invcble/NoMoreBorder; added a close-to-tray toggle with registry sync, then fixed a close-button freeze and tray thread-safety / shutdown coordination. |
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=FF4D00&height=8&section=header" alt="" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=30363D&height=6&section=header" alt="" width="100%" />
 
 ## $ mutt -f inbox
 
