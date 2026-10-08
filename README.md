@@ -37,7 +37,7 @@ images, GitHub Actions pipelines, and Nginx on Ubuntu.
 
 ## $ ls --public repos/
 
-Thirteen repositories are worth your time — ten I own and three forks I maintain. Language and licence
+Twelve repositories are worth your time — nine I own and three forks I maintain. Language and licence
 are exact; every description is taken from the repository's own README.
 
 _Index current as of October 2026._
@@ -55,7 +55,6 @@ _Index current as of October 2026._
 | [`nathwn12.github.io`](https://github.com/nathwn12/nathwn12.github.io) | TS | no license | The portfolio: Vite 7 + React 19, a hand-rolled five-route router, and a measured WCAG contrast table. |
 | [`oc-todo`](https://github.com/nathwn12/oc-todo) | TS | MIT | Per-session todo lists for OpenCode V2 - a todo tool with real plugin storage and a read-only sidebar checklist, including V1 todowrite parity. |
 | [`pear-desktop`](https://github.com/nathwn12/pear-desktop) | TS | MIT | Pear 🍐 is extension for music player |
-| [`aimp-discord-presence-art`](https://github.com/nathwn12/aimp-discord-presence-art) | - | no license | Public cover-art host for AIMP Discord Rich Presence (raw.githubusercontent transport). Art only - no code. |
 
 **Forks I maintain**
 
