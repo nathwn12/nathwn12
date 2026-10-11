@@ -50,9 +50,9 @@ _Index current as of October 2026._
 | [`oc-bifrost`](https://github.com/nathwn12/oc-bifrost) | JS | MIT | Runs V1-era OpenCode plugin hooks on the V2 runtime across a 24-row compatibility matrix (npm 1.4.3). |
 | [`oc-harness-setup`](https://github.com/nathwn12/oc-harness-setup) | PS | MIT | One-command OpenCode harness installer (npm 0.3.0); a 16-law doctor that fails closed and a reversible `--uninstall`. |
 | [`just-fps`](https://github.com/nathwn12/just-fps) | C++ | GPL-3.0 | A lightweight, no-bloat FPS overlay for Windows. Just stats on your screen while gaming. |
-| [`slowed-reverb-audio`](https://github.com/nathwn12/slowed-reverb-audio) | JS | no license | YouTube speed control with no pitch shift, plus a Dattorro plate reverb as an AudioWorklet. |
-| [`tab-audio-normalizer`](https://github.com/nathwn12/tab-audio-normalizer) | JS | no license | Per-site loudness normalisation to EBU R128 with a −1 dBTP true-peak limiter, in an AudioWorklet. |
-| [`nathwn12.github.io`](https://github.com/nathwn12/nathwn12.github.io) | TS | no license | The portfolio: Vite 7 + React 19, a hand-rolled five-route router, and a measured WCAG contrast table. |
+| [`slowed-reverb-audio`](https://github.com/nathwn12/slowed-reverb-audio) | JS | MIT | YouTube speed control with no pitch shift, plus a Dattorro plate reverb as an AudioWorklet. |
+| [`tab-audio-normalizer`](https://github.com/nathwn12/tab-audio-normalizer) | JS | MIT | Per-site loudness normalisation to EBU R128 with a −1 dBTP true-peak limiter, in an AudioWorklet. |
+| [`nathwn12.github.io`](https://github.com/nathwn12/nathwn12.github.io) | TS | MIT | The portfolio: Vite 7 + React 19, a hand-rolled five-route router, and a measured WCAG contrast table. |
 | [`oc-todo`](https://github.com/nathwn12/oc-todo) | TS | MIT | Per-session todo lists for OpenCode V2 - a todo tool with real plugin storage and a read-only sidebar checklist, including V1 todowrite parity. |
 | [`pear-desktop`](https://github.com/nathwn12/pear-desktop) | TS | MIT | Pear 🍐 is extension for music player |
 
