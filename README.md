@@ -92,3 +92,11 @@ _Index current as of October 2026._
 The fastest way to reach me is LinkedIn or email.
 
 [ PORTFOLIO ](https://nathwn12.github.io/) · [ GITHUB ](https://github.com/nathwn12) · [ LINKEDIN ](https://www.linkedin.com/in/nathaniel-nikolai-l-184181261/) · [ EMAIL ](mailto:nathanielnikolai.ladero@gmail.com)
+
+<!-- nathwn12 house footer: identical in every repo. Do not edit. -->
+<p align="center">
+  <a href="https://github.com/nathwn12"><img src="assets/signature.svg" width="96" alt="nathwn12" /></a>
+</p>
+<p align="center">
+  <sub>Built by <a href="https://github.com/nathwn12">nathwn12</a> · <a href="https://github.com/nathwn12?tab=repositories">All projects</a> · MIT</sub>
+</p>
