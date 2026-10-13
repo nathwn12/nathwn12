@@ -46,9 +46,9 @@ _Index current as of October 2026._
 
 | REPO | LANG | LICENSE | WHAT |
 | --- | --- | --- | --- |
-| [`oc-flight-deck`](https://github.com/nathwn12/oc-flight-deck) | TS | MIT | Live telemetry rail for the OpenCode terminal (npm 0.10.3); a hang annunciator calibrated over 54,218 settled tool calls. |
-| [`oc-bifrost`](https://github.com/nathwn12/oc-bifrost) | JS | MIT | Runs V1-era OpenCode plugin hooks on the V2 runtime across a 24-row compatibility matrix (npm 1.4.3). |
-| [`oc-harness-setup`](https://github.com/nathwn12/oc-harness-setup) | PS | MIT | One-command OpenCode harness installer (npm 0.3.0); a 16-law doctor that fails closed and a reversible `--uninstall`. |
+| [`oc-flight-deck`](https://github.com/nathwn12/oc-flight-deck) | TS | MIT | Live telemetry rail for the OpenCode terminal (npm 0.12.0); a hang annunciator calibrated over 54,218 settled tool calls. |
+| [`oc-bifrost`](https://github.com/nathwn12/oc-bifrost) | JS | MIT | Runs V1-era OpenCode plugin hooks on the V2 runtime across a 24-row compatibility matrix (npm 1.6.4). |
+| [`oc-harness-setup`](https://github.com/nathwn12/oc-harness-setup) | PS | MIT | One-command OpenCode harness installer (npm 0.3.2); a 16-law doctor that fails closed and a reversible `--uninstall`. |
 | [`just-fps`](https://github.com/nathwn12/just-fps) | C++ | GPL-3.0 | A lightweight, no-bloat FPS overlay for Windows. Just stats on your screen while gaming. |
 | [`slowed-reverb-audio`](https://github.com/nathwn12/slowed-reverb-audio) | JS | MIT | YouTube speed control with no pitch shift, plus a Dattorro plate reverb as an AudioWorklet. |
 | [`tab-audio-normalizer`](https://github.com/nathwn12/tab-audio-normalizer) | JS | MIT | Per-site loudness normalisation with R128-inspired measurement and adaptive gain holding a −23.5 to −18 LUFS comfort zone, plus a Blast Guard mode with a −1 dBTP true-peak ceiling. |
