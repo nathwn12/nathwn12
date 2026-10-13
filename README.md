@@ -70,6 +70,17 @@ _Index current as of October 2026._
 | [`NoMoreBorder`](https://github.com/nathwn12/NoMoreBorder) | Python | MIT | Fork of invcble/NoMoreBorder; added a close-to-tray toggle, then fixed a close-button freeze and tray thread-safety. |
 | [`pear-desktop`](https://github.com/nathwn12/pear-desktop) | TS | MIT | Fork of pear-devs/pear-desktop; adds a player-actions plugin bundling Slowed Reverb and an A-B Section Repeat loop. |
 
+## $ grep -c repos.index
+
+The index is counted, not typed — one command reproduces both tables' total:
+
+```console
+$ grep -cE '^\| \[`' README.md
+18
+$ echo $?
+0
+```
+
 ## $ neofetch
 
 <div align="center">
