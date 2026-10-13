@@ -9,9 +9,9 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=16&duration=3000&pause=900&color=C9D1D9&center=true&vCenter=true&width=440&height=28&lines=Backend+Developer+%E2%80%94+C%23+%2F+ASP.NET+Core;Fintech+%E2%80%94+payments%2C+cash+management%2C+access+control;OpenCode+plugins%2C+Windows+utilities%2C+audio+tooling">
-  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=16&duration=3000&pause=900&color=1F2328&center=true&vCenter=true&width=440&height=28&lines=Backend+Developer+%E2%80%94+C%23+%2F+ASP.NET+Core;Fintech+%E2%80%94+payments%2C+cash+management%2C+access+control;OpenCode+plugins%2C+Windows+utilities%2C+audio+tooling">
-  <img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=16&duration=3000&pause=900&color=C9D1D9&center=true&vCenter=true&width=440&height=28&lines=Backend+Developer+%E2%80%94+C%23+%2F+ASP.NET+Core;Fintech+%E2%80%94+payments%2C+cash+management%2C+access+control;OpenCode+plugins%2C+Windows+utilities%2C+audio+tooling" alt="Backend Developer — C# / ASP.NET Core. Fintech — payments, cash management, access control. OpenCode plugins, Windows utilities, audio tooling.">
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=16&duration=3000&pause=900&color=C9D1D9&center=true&vCenter=true&width=440&height=28&lines=OpenCode+plugins%2C+Windows+desktop+tools%2C+audio+%26+music+apps;Backend+Developer+%E2%80%94+C%23+%2F+ASP.NET+Core;Fintech+%E2%80%94+payments%2C+cash+management%2C+access+control">
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=16&duration=3000&pause=900&color=1F2328&center=true&vCenter=true&width=440&height=28&lines=OpenCode+plugins%2C+Windows+desktop+tools%2C+audio+%26+music+apps;Backend+Developer+%E2%80%94+C%23+%2F+ASP.NET+Core;Fintech+%E2%80%94+payments%2C+cash+management%2C+access+control">
+  <img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=16&duration=3000&pause=900&color=C9D1D9&center=true&vCenter=true&width=440&height=28&lines=OpenCode+plugins%2C+Windows+desktop+tools%2C+audio+%26+music+apps;Backend+Developer+%E2%80%94+C%23+%2F+ASP.NET+Core;Fintech+%E2%80%94+payments%2C+cash+management%2C+access+control" alt="OpenCode plugins, Windows desktop tools, audio &amp; music apps. Backend Developer — C# / ASP.NET Core. Fintech — payments, cash management, access control.">
 </picture>
 
 </div>
@@ -37,7 +37,7 @@ images, GitHub Actions pipelines, and Nginx on Ubuntu.
 
 ## $ ls --public repos/
 
-Twelve repositories are worth your time — nine I own and three forks I maintain. Language and licence
+Eighteen repositories are worth your time — fourteen I own and four forks I maintain. Language and licence
 are exact; every description is taken from the repository's own README.
 
 _Index current as of October 2026._
@@ -54,7 +54,12 @@ _Index current as of October 2026._
 | [`tab-audio-normalizer`](https://github.com/nathwn12/tab-audio-normalizer) | JS | MIT | Per-site loudness normalisation to EBU R128 with a −1 dBTP true-peak limiter, in an AudioWorklet. |
 | [`nathwn12.github.io`](https://github.com/nathwn12/nathwn12.github.io) | TS | MIT | The portfolio: Vite 7 + React 19, a hand-rolled five-route router, and a measured WCAG contrast table. |
 | [`oc-todo`](https://github.com/nathwn12/oc-todo) | TS | MIT | Per-session todo lists for OpenCode V2 - a todo tool with real plugin storage and a read-only sidebar checklist, including V1 todowrite parity. |
-| [`pear-desktop`](https://github.com/nathwn12/pear-desktop) | TS | MIT | Pear 🍐 is extension for music player |
+| [`puppet`](https://github.com/nathwn12/puppet) | Rust | MIT | Control the Windows desktop from any MCP client - screenshot, window, input, cursor - Rust. |
+| [`bridge`](https://github.com/nathwn12/bridge) | TS | MIT | Watch your local repos and drive coding agents from one dashboard for solo Windows devs — TypeScript. |
+| [`oc-unified`](https://github.com/nathwn12/oc-unified) | TS | MIT | Carry the fleet watcher, the lifeline daemon, and the title renamer in one OpenCode v2 plugin — TypeScript. |
+| [`Potflix`](https://github.com/nathwn12/Potflix) | Rust | MIT | Mirror whatever plays in PotPlayer on your Discord card — Rust. |
+| [`slowburn`](https://github.com/nathwn12/slowburn) | TS | MIT | Your music room: a Windows player with studio-grade Slow + Reverb and an A-B loop built for practice. |
+| [`gladius`](https://github.com/nathwn12/gladius) | Rust | MIT | Drive the owned Obscura engine over CDP from any MCP client — Rust. |
 
 **Forks I maintain**
 
@@ -63,6 +68,7 @@ _Index current as of October 2026._
 | [`aimp-discord-presence2`](https://github.com/nathwn12/aimp-discord-presence2) | C++ | no license | Fork of Exle/aimp-discord-presence; adds a four-layer cover resolver published through a GitHub/catbox/uguu/litterbox upload chain. |
 | [`MPO-GPU-FIX`](https://github.com/nathwn12/MPO-GPU-FIX) | C# | no license | Fork of RedDot-3ND7355/MPO-GPU-FIX; ported to .NET 10, plus registry null guards and an operator-precedence fix. |
 | [`NoMoreBorder`](https://github.com/nathwn12/NoMoreBorder) | Python | MIT | Fork of invcble/NoMoreBorder; added a close-to-tray toggle, then fixed a close-button freeze and tray thread-safety. |
+| [`pear-desktop`](https://github.com/nathwn12/pear-desktop) | TS | MIT | Fork of pear-devs/pear-desktop; adds a player-actions plugin bundling Slowed Reverb and an A-B Section Repeat loop. |
 
 ## $ neofetch
 
