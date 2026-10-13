@@ -38,7 +38,7 @@ images, GitHub Actions pipelines, and Nginx on Ubuntu.
 ## $ ls --public repos/
 
 Eighteen repositories are worth your time — fourteen I own and four forks I maintain. Language and licence
-are exact; every description is taken from the repository's own README.
+are exact; every description is condensed from the repository's own README.
 
 _Index current as of October 2026._
 
@@ -51,8 +51,8 @@ _Index current as of October 2026._
 | [`oc-harness-setup`](https://github.com/nathwn12/oc-harness-setup) | PS | MIT | One-command OpenCode harness installer (npm 0.3.0); a 16-law doctor that fails closed and a reversible `--uninstall`. |
 | [`just-fps`](https://github.com/nathwn12/just-fps) | C++ | GPL-3.0 | A lightweight, no-bloat FPS overlay for Windows. Just stats on your screen while gaming. |
 | [`slowed-reverb-audio`](https://github.com/nathwn12/slowed-reverb-audio) | JS | MIT | YouTube speed control with no pitch shift, plus a Dattorro plate reverb as an AudioWorklet. |
-| [`tab-audio-normalizer`](https://github.com/nathwn12/tab-audio-normalizer) | JS | MIT | Per-site loudness normalisation to EBU R128 with a −1 dBTP true-peak limiter, in an AudioWorklet. |
-| [`nathwn12.github.io`](https://github.com/nathwn12/nathwn12.github.io) | TS | MIT | The portfolio: Vite 7 + React 19, a hand-rolled five-route router, and a measured WCAG contrast table. |
+| [`tab-audio-normalizer`](https://github.com/nathwn12/tab-audio-normalizer) | JS | MIT | Per-site loudness normalisation with R128-inspired measurement and adaptive gain holding a −23.5 to −18 LUFS comfort zone, plus a Blast Guard mode with a −1 dBTP true-peak ceiling. |
+| [`nathwn12.github.io`](https://github.com/nathwn12/nathwn12.github.io) | TS | MIT | Personal portfolio and resume site — a terminal-themed single-page app presenting experience, skills, projects, and contact. |
 | [`oc-todo`](https://github.com/nathwn12/oc-todo) | TS | MIT | Per-session todo lists for OpenCode V2 - a todo tool with real plugin storage and a read-only sidebar checklist, including V1 todowrite parity. |
 | [`puppet`](https://github.com/nathwn12/puppet) | Rust | MIT | Control the Windows desktop from any MCP client - screenshot, window, input, cursor - Rust. |
 | [`bridge`](https://github.com/nathwn12/bridge) | TS | MIT | Watch your local repos and drive coding agents from one dashboard for solo Windows devs — TypeScript. |
