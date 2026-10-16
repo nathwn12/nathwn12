@@ -53,7 +53,7 @@ _Index current as of October 2026._
 | [`oc-harness-setup`](https://github.com/nathwn12/oc-harness-setup) | PS | MIT | One-command OpenCode harness installer (npm 0.3.3); a 16-law doctor that fails closed and a reversible `--uninstall`. |
 | [`just-fps`](https://github.com/nathwn12/just-fps) | C++ | GPL-3.0 | A lightweight, no-bloat FPS overlay for Windows. Just stats on your screen while gaming. |
 | [`slowed-reverb-audio`](https://github.com/nathwn12/slowed-reverb-audio) | JS | MIT | YouTube speed control with no pitch shift, plus a Dattorro plate reverb as an AudioWorklet. |
-| [`tab-audio-normalizer`](https://github.com/nathwn12/tab-audio-normalizer) | JS | MIT | Per-site loudness normalisation with R128-inspired measurement and adaptive gain holding a −23.5 to −18 LUFS comfort zone, plus a Blast Guard mode with a −1 dBTP true-peak ceiling. |
+| [`tab-audio-normalizer`](https://github.com/nathwn12/tab-audio-normalizer) | JS | MIT | Per-site loudness normalisation with R128-inspired measurement and adaptive gain holding a −23.5 to −18 LUFS comfort zone, plus a Blast Guard mode with a −2 dBTP true-peak ceiling. |
 | [`nathwn12.github.io`](https://github.com/nathwn12/nathwn12.github.io) | TS | MIT | Personal portfolio and resume site — a terminal-themed single-page app presenting experience, skills, projects, and contact. |
 | [`oc-todo`](https://github.com/nathwn12/oc-todo) | TS | MIT | Per-session todo lists for OpenCode V2 - a todo tool with real plugin storage and a read-only sidebar checklist, including V1 todowrite parity. |
 | [`puppet`](https://github.com/nathwn12/puppet) | Rust | MIT | Control the Windows desktop from any MCP client - screenshot, window, input, cursor - Rust. |
