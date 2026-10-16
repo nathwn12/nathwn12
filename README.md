@@ -2,6 +2,8 @@
 
 <div align="center">
 
+<img src="assets/icon.svg" width="120" height="120" alt="nathwn12 author mark" />
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=160&section=header&text=NATHANIEL%20NIKOLAI%20LADERO&fontSize=38&fontColor=F2F2EF&fontFamily=IBM+Plex+Mono&fontAlignY=50&animation=fadeIn">
   <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=FFFFFF&height=160&section=header&text=NATHANIEL%20NIKOLAI%20LADERO&fontSize=38&fontColor=1F2328&fontFamily=IBM+Plex+Mono&fontAlignY=50&animation=fadeIn">
