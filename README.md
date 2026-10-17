@@ -1,89 +1,91 @@
-<!-- nathwn12 · profile README · v6 · theme-aware (light + dark) -->
+<!-- nathwn12 · profile README · variant D · pixel terminal -->
 
 <div align="center">
 
 <img src="assets/icon.svg" width="120" height="120" alt="nathwn12 author mark" />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=160&section=header&text=NATHANIEL%20NIKOLAI%20LADERO&fontSize=38&fontColor=F2F2EF&fontFamily=IBM+Plex+Mono&fontAlignY=50&animation=fadeIn">
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=FFFFFF&height=160&section=header&text=NATHANIEL%20NIKOLAI%20LADERO&fontSize=38&fontColor=1F2328&fontFamily=IBM+Plex+Mono&fontAlignY=50&animation=fadeIn">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=160&section=header&text=NATHANIEL%20NIKOLAI%20LADERO&fontSize=38&fontColor=F2F2EF&fontFamily=IBM+Plex+Mono&fontAlignY=50&animation=fadeIn" alt="NATHANIEL NIKOLAI LADERO" width="100%">
-</picture>
+<img src="assets/hero.svg" width="880" alt="Backend Developer - pixel terminal" />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=16&duration=3000&pause=900&color=C9D1D9&center=true&vCenter=true&width=440&height=28&lines=OpenCode+plugins%2C+Windows+desktop+tools%2C+audio+%26+music+apps;Backend+Developer+%E2%80%94+C%23+%2F+ASP.NET+Core;Fintech+%E2%80%94+payments%2C+cash+management%2C+access+control">
-  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=16&duration=3000&pause=900&color=1F2328&center=true&vCenter=true&width=440&height=28&lines=OpenCode+plugins%2C+Windows+desktop+tools%2C+audio+%26+music+apps;Backend+Developer+%E2%80%94+C%23+%2F+ASP.NET+Core;Fintech+%E2%80%94+payments%2C+cash+management%2C+access+control">
-  <img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=16&duration=3000&pause=900&color=C9D1D9&center=true&vCenter=true&width=440&height=28&lines=OpenCode+plugins%2C+Windows+desktop+tools%2C+audio+%26+music+apps;Backend+Developer+%E2%80%94+C%23+%2F+ASP.NET+Core;Fintech+%E2%80%94+payments%2C+cash+management%2C+access+control" alt="OpenCode plugins, Windows desktop tools, audio &amp; music apps. Backend Developer — C# / ASP.NET Core. Fintech — payments, cash management, access control.">
-</picture>
+<img src="assets/divider.svg" width="880" height="16" alt="pixel divider" />
+
+*Small sharp tools built in the open.*
+
+**[Portfolio](https://nathwn12.github.io/)** · **[LinkedIn](https://www.linkedin.com/in/nathaniel-nikolai-l-184181261/)** · **[Email](mailto:nathanielnikolai.ladero@gmail.com)**
 
 </div>
 
-## $ whoami
+## Snapshot
 
-I'm **Nathaniel Nikolai Ladero**, a backend developer working in **C# / ASP.NET Core**. Three years
-of production fintech, and a habit of building small sharp tools in the open. Everything here splits
-by what you can check: the day job is proprietary, the repositories are not.
+|  |  |
+| --- | --- |
+| **Domain** | Production fintech (3 years) — payments · cash management · access control |
+| **Data** | EF Core · Dapper over MySQL / MariaDB / PostgreSQL / SQL Server, with Redis caching |
+| **Auth** | JWT · OAuth 2.0 · OIDC authorization |
+| **Delivery** | Docker images · GitHub Actions pipelines · Nginx on Ubuntu |
+| **Beyond .NET** | Rust · TypeScript · PowerShell — desktop, audio, and OpenCode tooling |
 
-## $ journalctl -u career.service --no-pager
-
-Three years of production fintech in C# / ASP.NET Core — payments, cash management and access
-control. Proprietary, so there is nothing to link. Behind it: EF Core and Dapper over MySQL /
-MariaDB / PostgreSQL / SQL Server with Redis caching; JWT, OAuth 2.0 and OIDC authorization; Docker
-images, GitHub Actions pipelines, and Nginx on Ubuntu.
+## Stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=cs,dotnet,ts,js,powershell,cpp,py,react,vite,tailwind,docker,redis,mysql,postgres,mongodb,rabbitmq,nginx,aws,githubactions&theme=dark&perline=9" alt="C#, .NET, TypeScript, JavaScript, PowerShell, C++, Python, React, Vite, Tailwind, Docker, Redis, MySQL, PostgreSQL, MongoDB, RabbitMQ, Nginx, AWS, GitHub Actions" />
+<img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square" alt="C#" />
+<img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+<img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell" />
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+<img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
+<img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" alt="RabbitMQ" />
+<img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+<img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" />
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
 
 </div>
 
-## $ ls --public repos/
+## The index
 
-Eighteen repositories are worth your time — fourteen I own and four forks I maintain. Language and licence
-are exact; every description is condensed from the repository's own README.
+All 18 public repositories — 15 owned · 3 forks
+
+The public index — eighteen repositories: fifteen owned, three forks maintained. Language and licence are exact; every description is condensed from the repository's own README.
 
 _Index current as of October 2026._
 
-**Own projects**
-
 | REPO | LANG | LICENSE | WHAT |
 | --- | --- | --- | --- |
+| [`slowburn`](https://github.com/nathwn12/slowburn) | TS | MIT | Your music room: a Windows player with studio-grade Slow + Reverb and an A-B loop built for practice. |
+| [`tab-audio-normalizer`](https://github.com/nathwn12/tab-audio-normalizer) | JS | MIT | Per-site loudness normalisation with R128-inspired measurement and adaptive gain holding a −23.5 to −18 LUFS comfort zone, plus a Blast Guard mode with a −2 dBTP true-peak ceiling. |
+| [`Potflix`](https://github.com/nathwn12/Potflix) | Rust | MIT | Mirror whatever plays in PotPlayer on your Discord card. |
 | [`oc-flight-deck`](https://github.com/nathwn12/oc-flight-deck) | TS | MIT | Live telemetry rail for the OpenCode terminal (npm 0.19.2); a hang annunciator calibrated over 54,218 settled tool calls. |
+| [`puppet`](https://github.com/nathwn12/puppet) | Rust | MIT | Control the Windows desktop from any MCP client — screenshot, window, input, cursor. |
+| [`gladius`](https://github.com/nathwn12/gladius) | Rust | MIT | Drive the owned Obscura engine over CDP from any MCP client. |
 | [`oc-bifrost`](https://github.com/nathwn12/oc-bifrost) | JS | MIT | Runs V1-era OpenCode plugin hooks on the V2 runtime across a 24-row compatibility matrix (npm 1.6.5). |
 | [`oc-harness-setup`](https://github.com/nathwn12/oc-harness-setup) | PS | MIT | One-command OpenCode harness installer (npm 0.3.3); a 16-law doctor that fails closed and a reversible `--uninstall`. |
-| [`just-fps`](https://github.com/nathwn12/just-fps) | C++ | GPL-3.0 | A lightweight, no-bloat FPS overlay for Windows. Just stats on your screen while gaming. |
-| [`slowed-reverb-audio`](https://github.com/nathwn12/slowed-reverb-audio) | JS | MIT | YouTube speed control with no pitch shift, plus a Dattorro plate reverb as an AudioWorklet. |
-| [`tab-audio-normalizer`](https://github.com/nathwn12/tab-audio-normalizer) | JS | MIT | Per-site loudness normalisation with R128-inspired measurement and adaptive gain holding a −23.5 to −18 LUFS comfort zone, plus a Blast Guard mode with a −2 dBTP true-peak ceiling. |
+| [`bridge`](https://github.com/nathwn12/bridge) | TS | MIT | Watch your local repos and drive coding agents from one dashboard for solo Windows devs. |
 | [`nathwn12.github.io`](https://github.com/nathwn12/nathwn12.github.io) | TS | MIT | Personal portfolio and resume site — a terminal-themed single-page app presenting experience, skills, projects, and contact. |
-| [`oc-todo`](https://github.com/nathwn12/oc-todo) | TS | MIT | Per-session todo lists for OpenCode V2 - a todo tool with real plugin storage and a read-only sidebar checklist, including V1 todowrite parity. |
-| [`puppet`](https://github.com/nathwn12/puppet) | Rust | MIT | Control the Windows desktop from any MCP client - screenshot, window, input, cursor - Rust. |
-| [`bridge`](https://github.com/nathwn12/bridge) | TS | MIT | Watch your local repos and drive coding agents from one dashboard for solo Windows devs — TypeScript. |
-| [`oc-unified`](https://github.com/nathwn12/oc-unified) | TS | MIT | Carry the fleet watcher, the lifeline daemon, and the title renamer in one OpenCode v2 plugin — TypeScript. |
-| [`Potflix`](https://github.com/nathwn12/Potflix) | Rust | MIT | Mirror whatever plays in PotPlayer on your Discord card — Rust. |
-| [`slowburn`](https://github.com/nathwn12/slowburn) | TS | MIT | Your music room: a Windows player with studio-grade Slow + Reverb and an A-B loop built for practice. |
-| [`gladius`](https://github.com/nathwn12/gladius) | Rust | MIT | Drive the owned Obscura engine over CDP from any MCP client — Rust. |
+| [`ArcInstaller`](https://github.com/nathwn12/ArcInstaller) | PS | MIT | Install, repair and revert the ARC icon theme for Windows themers. |
+| [`oc-todo`](https://github.com/nathwn12/oc-todo) | TS | MIT | Per-session todo lists for OpenCode V2 — a todo tool with real plugin storage and a read-only sidebar checklist, including V1 todowrite parity. |
+| [`slowed-reverb-audio`](https://github.com/nathwn12/slowed-reverb-audio) | JS | MIT | YouTube speed control with no pitch shift, plus a Dattorro plate reverb as an AudioWorklet. |
+| [`oc-collections`](https://github.com/nathwn12/oc-collections) | PS | MIT | Indexes the oc-* plugin family for OpenCode users. |
+| [`aimp-discord-presence-art`](https://github.com/nathwn12/aimp-discord-presence-art) | — | MIT | Cover art for the AIMP Discord Rich Presence — art only, no code. |
 
 **Forks I maintain**
 
 | REPO | LANG | LICENSE | WHAT |
 | --- | --- | --- | --- |
-| [`aimp-discord-presence2`](https://github.com/nathwn12/aimp-discord-presence2) | C++ | no license | Fork of Exle/aimp-discord-presence; adds a four-layer cover resolver published through a GitHub/catbox/uguu/litterbox upload chain. |
-| [`MPO-GPU-FIX`](https://github.com/nathwn12/MPO-GPU-FIX) | C# | no license | Fork of RedDot-3ND7355/MPO-GPU-FIX; ported to .NET 10, plus registry null guards and an operator-precedence fix. |
-| [`NoMoreBorder`](https://github.com/nathwn12/NoMoreBorder) | Python | MIT | Fork of invcble/NoMoreBorder; added a close-to-tray toggle, then fixed a close-button freeze and tray thread-safety. |
 | [`pear-desktop`](https://github.com/nathwn12/pear-desktop) | TS | MIT | Fork of pear-devs/pear-desktop; adds a player-actions plugin bundling Slowed Reverb and an A-B Section Repeat loop. |
+| [`Installer2`](https://github.com/nathwn12/Installer2) | Go | GPL-3.0 | Fork of Vencord/Installer — the cross-platform GUI/CLI installer for Vencord. |
+| [`aimp-discord-presence2`](https://github.com/nathwn12/aimp-discord-presence2) | C++ | no license | Fork of Exle/aimp-discord-presence; adds a four-layer cover resolver published through a GitHub/catbox/uguu/litterbox upload chain. |
 
-## $ grep -c repos.index
-
-The index is counted, not typed — one command reproduces both tables' total:
-
-```console
-$ grep -cE '^\| \[`' README.md
-18
-$ echo $?
-0
-```
-
-## $ neofetch
+## Activity
 
 <div align="center">
 
@@ -106,11 +108,11 @@ $ echo $?
 
 </div>
 
-## $ mutt -f inbox — contact
+## Contact
 
 The fastest way to reach me is LinkedIn or email.
 
-[ PORTFOLIO ](https://nathwn12.github.io/) · [ GITHUB ](https://github.com/nathwn12) · [ LINKEDIN ](https://www.linkedin.com/in/nathaniel-nikolai-l-184181261/) · [ EMAIL ](mailto:nathanielnikolai.ladero@gmail.com)
+[Portfolio](https://nathwn12.github.io/) · [GitHub](https://github.com/nathwn12) · [LinkedIn](https://www.linkedin.com/in/nathaniel-nikolai-l-184181261/) · [Email](mailto:nathanielnikolai.ladero@gmail.com)
 
 <!-- nathwn12 house footer: identical in every repo. Do not edit. -->
 <p align="center">
