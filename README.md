@@ -2,8 +2,6 @@
 
 <div align="center">
 
-<img src="assets/icon.svg" width="120" height="120" alt="nathwn12 author mark" />
-
 <img src="assets/hero.svg" width="880" alt="Backend Developer - pixel terminal" />
 
 <img src="assets/divider.svg" width="880" height="16" alt="pixel divider" />
