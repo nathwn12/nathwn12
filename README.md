@@ -83,29 +83,6 @@ _Index current as of October 2026._
 | [`Installer2`](https://github.com/nathwn12/Installer2) | Go | GPL-3.0 | Fork of Vencord/Installer — the cross-platform GUI/CLI installer for Vencord. |
 | [`aimp-discord-presence2`](https://github.com/nathwn12/aimp-discord-presence2) | C++ | no license | Fork of Exle/aimp-discord-presence; adds a four-layer cover resolver published through a GitHub/catbox/uguu/litterbox upload chain. |
 
-## Activity
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=nathwn12&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=C9D1D9&icon_color=8B949E&text_color=F2F2EF&hide_rank=true&hide=stars">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=nathwn12&show_icons=true&include_all_commits=true&hide_border=true&bg_color=FFFFFF&title_color=1F2328&icon_color=59636E&text_color=1F2328&hide_rank=true&hide=stars">
-  <img src="https://github-readme-stats.vercel.app/api?username=nathwn12&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=C9D1D9&icon_color=8B949E&text_color=F2F2EF&hide_rank=true&hide=stars" alt="nathwn12's GitHub stats — commits, pull requests and issues across public repositories" height="180">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nathwn12&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=C9D1D9&text_color=F2F2EF">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=nathwn12&layout=compact&langs_count=8&hide_border=true&bg_color=FFFFFF&title_color=1F2328&text_color=1F2328">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nathwn12&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=C9D1D9&text_color=F2F2EF" alt="Most-used languages across nathwn12's public repositories" height="180">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=nathwn12&background=0D1117&border=30363D&stroke=8B949E&ring=8B949E&fire=C9D1D9&currStreakNum=F2F2EF&sideNums=F2F2EF&currStreakLabel=8B949E&sideLabels=A3A39C&dates=8B949E&hide_border=true">
-  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=nathwn12&background=FFFFFF&border=D0D7DE&stroke=59636E&ring=59636E&fire=1F2328&currStreakNum=1F2328&sideNums=1F2328&currStreakLabel=59636E&sideLabels=59636E&dates=59636E&hide_border=true">
-  <img src="https://streak-stats.demolab.com?user=nathwn12&background=0D1117&border=30363D&stroke=8B949E&ring=8B949E&fire=C9D1D9&currStreakNum=F2F2EF&sideNums=F2F2EF&currStreakLabel=8B949E&sideLabels=A3A39C&dates=8B949E&hide_border=true" alt="nathwn12's contribution streak">
-</picture>
-
-</div>
-
 ## Contact
 
 The fastest way to reach me is LinkedIn or email.
