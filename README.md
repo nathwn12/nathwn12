@@ -53,7 +53,7 @@
 
 All 18 public repositories — 15 owned · 3 forks
 
-The public index — eighteen repositories: fifteen owned, three forks maintained. Language and licence are exact; every description is condensed from the repository's own README.
+Language and licence are exact; every description is condensed from the repository's own README.
 
 _Index current as of October 2026._
 
