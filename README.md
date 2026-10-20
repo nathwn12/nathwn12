@@ -56,9 +56,9 @@ for: OpenCode users who want to see what every session spends.
 
 Built with: TypeScript. [Repo](https://github.com/nathwn12/oc-flight-deck) · [Docs](https://github.com/nathwn12/oc-flight-deck#readme)
 
-### [slowburn](https://github.com/nathwn12/slowburn) — slow down the hard part of a track and loop it
+### [slowburn](https://github.com/nathwn12/slowburn) — a Windows player for slow + reverb, built for listening
 
-for: musicians learning by ear who practice one passage at a time.
+for: slowed + reverb fans who want their own library that way, offline — slow or speed any track, add reverb, A-B loop a passage.
 
 Source only — no release yet. Clone and run with Tauri; releases coming.
 
