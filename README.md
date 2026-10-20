@@ -1,8 +1,18 @@
-# nathwn12
+<!-- nathwn12 · profile README · variant D · pixel terminal -->
 
-I build tools that let AI agents operate real desktops, browsers, and developer workflows.
+<div align="center">
 
-[Portfolio](https://nathwn12.github.io/) · [LinkedIn](https://www.linkedin.com/in/nathaniel-nikolai-l-184181261/) · [Email](mailto:nathanielnikolai.ladero@gmail.com)
+<img src="assets/icon.svg" width="120" height="120" alt="nathwn12 author mark" />
+
+<img src="assets/hero.svg" width="880" alt="Backend Developer - pixel terminal" />
+
+<img src="assets/divider.svg" width="880" height="16" alt="pixel divider" />
+
+*I build tools that let AI agents operate real desktops, browsers, and developer workflows.*
+
+**[Portfolio](https://nathwn12.github.io/)** · **[LinkedIn](https://www.linkedin.com/in/nathaniel-nikolai-l-184181261/)** · **[Email](mailto:nathanielnikolai.ladero@gmail.com)**
+
+</div>
 
 ## Featured
 
