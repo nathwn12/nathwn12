@@ -41,7 +41,7 @@ Built with: Node.js, PowerShell. [Repo](https://github.com/nathwn12/oc-harness-s
 for: OpenCode users with plugins written for the old runtime.
 
 ```jsonc
-{ "plugins": [{ "package": "@nathwn12/oc-bifrost@1.6.5" }] }
+{ "plugins": [{ "package": "@nathwn12/oc-bifrost@latest" }] }
 ```
 
 Built with: JavaScript. [Repo](https://github.com/nathwn12/oc-bifrost) · [Docs](https://github.com/nathwn12/oc-bifrost#readme)
@@ -51,7 +51,7 @@ Built with: JavaScript. [Repo](https://github.com/nathwn12/oc-bifrost) · [Docs]
 for: OpenCode users who want to see what every session spends.
 
 ```json
-{ "plugins": ["oc-flight-deck@0.19.2"] }
+{ "plugins": ["oc-flight-deck@latest"] }
 ```
 
 Built with: TypeScript. [Repo](https://github.com/nathwn12/oc-flight-deck) · [Docs](https://github.com/nathwn12/oc-flight-deck#readme)
