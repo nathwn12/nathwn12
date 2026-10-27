@@ -1,91 +1,132 @@
-<!-- nathwn12 · profile README · variant D · pixel terminal -->
+<!-- nathwn12 · profile README · variant E · backend-first -->
 
 <div align="center">
+
+<img src="assets/icon.svg" width="120" height="120" alt="nathwn12 author mark" />
 
 <img src="assets/hero.svg" width="880" alt="Backend Developer - pixel terminal" />
 
 <img src="assets/divider.svg" width="880" height="16" alt="pixel divider" />
 
-*Small sharp tools built in the open.*
+*You get a backend developer who has shipped fintech APIs for three years and keeps them fast, versioned, and observable.*
 
 **[Portfolio](https://nathwn12.github.io/)** · **[LinkedIn](https://www.linkedin.com/in/nathaniel-nikolai-l-184181261/)** · **[Email](mailto:nathanielnikolai.ladero@gmail.com)**
 
 </div>
 
-## Snapshot
+## Experience
 
-|  |  |
-| --- | --- |
-| **Domain** | Production fintech (3 years) — payments · cash management · access control |
-| **Data** | EF Core · Dapper over MySQL / MariaDB / PostgreSQL / SQL Server, with Redis caching |
-| **Auth** | JWT · OAuth 2.0 · OIDC authorization |
-| **Delivery** | Docker images · GitHub Actions pipelines · Nginx on Ubuntu |
-| **Beyond .NET** | Rust · TypeScript · PowerShell — desktop, audio, and OpenCode tooling |
+Backend Developer, Xentra Infotech Solutions Inc. — Remote — March 2023 to May 2026 (three years, two months). The company closed in May 2026.
 
-## Stack
+- Payments API: worst-case query latency fell from about 60 seconds to under one second — a 98% cut — by migrating payment services from MySql.Data to MySqlConnector on AWS.
+- Data access: read latency cut by over 40% with EF Core and Dapper plus Redis caching and index tuning against real query plans.
+- Auth: JWT, OAuth 2.0, OpenID Connect, RBAC and ABAC; zero high/critical Snyk findings on production deployments.
+- Delivery ledger: 1,182 commits across 17 repositories, 2023-2026, recovered from 21 scanned internal repositories after the company closed.
 
-<div align="center">
+The fintech systems are closed-source and the work below is what is public.
 
-<img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square" alt="C#" />
-<img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET" />
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
-<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
-<img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell" />
-<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
-<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
-<img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
-<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
-<img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" alt="RabbitMQ" />
-<img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-<img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" />
-<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+## Open-source work
 
-</div>
+This is the secondary body of work, built outside the day job.
 
-## The index
+### [puppet](https://github.com/nathwn12/puppet) — give your coding agent eyes and hands for the Windows desktop
 
-All 18 public repositories — 15 owned · 3 forks
+for: agent-tooling developers who want screenshots, window control, and input from any MCP client.
 
-Language and licence are exact; every description is condensed from the repository's own README.
+```powershell
+npx -y puppet-mcp@latest --doctor
+```
 
-_Index current as of October 2026._
+Built with: Rust. [Repo](https://github.com/nathwn12/puppet) · [Docs](https://github.com/nathwn12/puppet#readme)
 
-| REPO | LANG | LICENSE | WHAT |
-| --- | --- | --- | --- |
-| [`slowburn`](https://github.com/nathwn12/slowburn) | TS | MIT | Your music room: a Windows player with studio-grade Slow + Reverb and an A-B loop built for practice. |
-| [`tab-audio-normalizer`](https://github.com/nathwn12/tab-audio-normalizer) | JS | MIT | Per-site loudness normalisation with R128-inspired measurement and adaptive gain holding a −23.5 to −18 LUFS comfort zone, plus a Blast Guard mode with a −2 dBTP true-peak ceiling. |
-| [`Potflix`](https://github.com/nathwn12/Potflix) | Rust | MIT | Mirror whatever plays in PotPlayer on your Discord card. |
-| [`oc-flight-deck`](https://github.com/nathwn12/oc-flight-deck) | TS | MIT | Live telemetry rail for the OpenCode terminal (npm 0.19.2); a hang annunciator calibrated over 54,218 settled tool calls. |
-| [`puppet`](https://github.com/nathwn12/puppet) | Rust | MIT | Control the Windows desktop from any MCP client — screenshot, window, input, cursor. |
-| [`gladius`](https://github.com/nathwn12/gladius) | Rust | MIT | Drive the owned Obscura engine over CDP from any MCP client. |
-| [`oc-bifrost`](https://github.com/nathwn12/oc-bifrost) | JS | MIT | Runs V1-era OpenCode plugin hooks on the V2 runtime across a 24-row compatibility matrix (npm 1.6.5). |
-| [`oc-harness-setup`](https://github.com/nathwn12/oc-harness-setup) | PS | MIT | One-command OpenCode harness installer (npm 0.3.3); a 16-law doctor that fails closed and a reversible `--uninstall`. |
-| [`bridge`](https://github.com/nathwn12/bridge) | TS | MIT | Watch your local repos and drive coding agents from one dashboard for solo Windows devs. |
-| [`nathwn12.github.io`](https://github.com/nathwn12/nathwn12.github.io) | TS | MIT | Personal portfolio and resume site — a terminal-themed single-page app presenting experience, skills, projects, and contact. |
-| [`ArcInstaller`](https://github.com/nathwn12/ArcInstaller) | PS | MIT | Install, repair and revert the ARC icon theme for Windows themers. |
-| [`oc-todo`](https://github.com/nathwn12/oc-todo) | TS | MIT | Per-session todo lists for OpenCode V2 — a todo tool with real plugin storage and a read-only sidebar checklist, including V1 todowrite parity. |
-| [`slowed-reverb-audio`](https://github.com/nathwn12/slowed-reverb-audio) | JS | MIT | YouTube speed control with no pitch shift, plus a Dattorro plate reverb as an AudioWorklet. |
-| [`oc-collections`](https://github.com/nathwn12/oc-collections) | PS | MIT | Indexes the oc-* plugin family for OpenCode users. |
-| [`aimp-discord-presence-art`](https://github.com/nathwn12/aimp-discord-presence-art) | — | MIT | Cover art for the AIMP Discord Rich Presence — art only, no code. |
+### [gladius](https://github.com/nathwn12/gladius) — give your agent a browser it can drive
 
-**Forks I maintain**
+for: developers who want automated browsing without walking pages by hand.
 
-| REPO | LANG | LICENSE | WHAT |
-| --- | --- | --- | --- |
-| [`pear-desktop`](https://github.com/nathwn12/pear-desktop) | TS | MIT | Fork of pear-devs/pear-desktop; adds a player-actions plugin bundling Slowed Reverb and an A-B Section Repeat loop. |
-| [`Installer2`](https://github.com/nathwn12/Installer2) | Go | GPL-3.0 | Fork of Vencord/Installer — the cross-platform GUI/CLI installer for Vencord. |
-| [`aimp-discord-presence2`](https://github.com/nathwn12/aimp-discord-presence2) | C++ | no license | Fork of Exle/aimp-discord-presence; adds a four-layer cover resolver published through a GitHub/catbox/uguu/litterbox upload chain. |
+```powershell
+npx -y gladius-mcp@latest --doctor
+```
 
-## Contact
+Built with: Rust. [Repo](https://github.com/nathwn12/gladius) · [Docs](https://github.com/nathwn12/gladius#readme)
 
-The fastest way to reach me is LinkedIn or email.
+### [oc-harness-setup](https://github.com/nathwn12/oc-harness-setup) — install the whole OpenCode harness in one command
+
+for: OpenCode users who want agents, commands, and skills set up with one explicit, reversible step.
+
+```bash
+npx --yes oc-harness-setup setup
+```
+
+Built with: Node.js, PowerShell. [Repo](https://github.com/nathwn12/oc-harness-setup) · [Docs](https://github.com/nathwn12/oc-harness-setup#readme)
+
+### [oc-bifrost](https://github.com/nathwn12/oc-bifrost) — keep V1-era OpenCode plugins running on V2
+
+for: OpenCode users with plugins written for the old runtime.
+
+```jsonc
+{ "plugins": [{ "package": "@nathwn12/oc-bifrost@latest" }] }
+```
+
+Built with: JavaScript. [Repo](https://github.com/nathwn12/oc-bifrost) · [Docs](https://github.com/nathwn12/oc-bifrost#readme)
+
+### [oc-flight-deck](https://github.com/nathwn12/oc-flight-deck) — live cost, tokens, and context in the OpenCode sidebar
+
+for: OpenCode users who want to see what every session spends.
+
+```json
+{ "plugins": ["oc-flight-deck@latest"] }
+```
+
+Built with: TypeScript. [Repo](https://github.com/nathwn12/oc-flight-deck) · [Docs](https://github.com/nathwn12/oc-flight-deck#readme)
+
+### [slowburn](https://github.com/nathwn12/slowburn) — a Windows player for slow + reverb, built for listening
+
+for: slowed + reverb fans who want their own library that way, offline — slow or speed any track, add reverb, A-B loop a passage.
+
+Source only — no release yet. Clone and run with Tauri; releases coming.
+
+Built with: TypeScript, Tauri. [Repo](https://github.com/nathwn12/slowburn) · [Docs](https://github.com/nathwn12/slowburn#readme)
+
+### [Potflix](https://github.com/nathwn12/Potflix) — show what plays in PotPlayer on your Discord card
+
+for: PotPlayer users who want their Discord status to follow their library.
+
+Tagged release, no binaries yet. Build from source; see repo README.
+
+Built with: Rust. [Repo](https://github.com/nathwn12/Potflix) · [Docs](https://github.com/nathwn12/Potflix#readme)
+
+## Everything else
+
+- [tab-audio-normalizer](https://github.com/nathwn12/tab-audio-normalizer) — keeps loud tabs at an even level, per site.
+- [ArcInstaller](https://github.com/nathwn12/ArcInstaller) — installs, repairs, and reverts the ARC icon theme.
+- [slowed-reverb-audio](https://github.com/nathwn12/slowed-reverb-audio) — YouTube speed control plus plate reverb.
+- [oc-collections](https://github.com/nathwn12/oc-collections) — index of the oc-* plugin family.
+- [rea-shim](https://github.com/nathwn12/rea-shim) — Thin compatibility wrapper that lets existing REA scripts keep running unmodified.
+- [aimp-discord-presence-art](https://github.com/nathwn12/aimp-discord-presence-art) — cover art for the AIMP Discord Rich Presence — art only, no code.
+
+## Archived
+
+- [oc-todo](https://github.com/nathwn12/oc-todo) — retired, not deleted; the repository's own description states it is deprecated 2026-10-21 because OpenCode 2.1 restored the built-in `todowrite`, and points to `EOL.md`.
+
+## Forks
+
+- [aimp-discord-presence2](https://github.com/nathwn12/aimp-discord-presence2) ([upstream](https://github.com/Exle/aimp-discord-presence)) — [fork · maintained] Maintained fork of the AIMP→Discord presence plugin with fixes noted in the repo.
+- [Installer2](https://github.com/nathwn12/Installer2) ([upstream](https://github.com/Vencord/Installer)) — [fork · upstream link] Fork kept for reference; use upstream unless noted in the repo.
+- [pear-desktop](https://github.com/nathwn12/pear-desktop) ([upstream](https://github.com/pear-devs/pear-desktop)) — [fork · upstream link] Fork of the large upstream Pear desktop client, kept for study; all credit to upstream.
+
+## Install and verify
+
+Each tool above carries its own install line; run it, then check the version with `npm view <package> version`. MCP servers prove themselves with `--doctor`; OpenCode plugins need an OpenCode restart before they load.
+
+## Forward
+
+You will see continued work on AI-assisted development and agent tooling.
+You can follow the same local open-weight workflows used here with LM Studio, OpenCode, and Codex, including DeepSeek V4 Flash, Gemma 4, and Qwen 3.8.
+The plan is steady learning in the open, one small tool at a time.
+
+## About
+
+Backend developer at Xentra Infotech Solutions Inc. from March 2023 to May 2026; you can read the open-source tooling above as the public record. The fastest way to reach me is LinkedIn or email.
 
 [Portfolio](https://nathwn12.github.io/) · [GitHub](https://github.com/nathwn12) · [LinkedIn](https://www.linkedin.com/in/nathaniel-nikolai-l-184181261/) · [Email](mailto:nathanielnikolai.ladero@gmail.com)
 
