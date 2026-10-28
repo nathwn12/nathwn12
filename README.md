@@ -10,7 +10,7 @@
 
 *You get a backend developer who has shipped fintech APIs for three years and keeps them fast, versioned, and observable.*
 
-**[Portfolio](https://nathwn12.github.io/)** · **[LinkedIn](https://www.linkedin.com/in/nathaniel-nikolai-l-184181261/)** · **[Email](mailto:nathanielnikolai.ladero@gmail.com)**
+**[Portfolio](https://nathwn12.github.io/)** · **[Resume](https://nathwn12.github.io/Nathaniel-Nikolai-Ladero-Resume.pdf)** · **[CV](https://nathwn12.github.io/Nathaniel-Nikolai-Ladero-CV.pdf)** · **[LinkedIn](https://www.linkedin.com/in/nathaniel-nikolai-l-184181261/)** · **[Email](mailto:nathanielnikolai.ladero@gmail.com)**
 
 </div>
 
