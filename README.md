@@ -1,4 +1,4 @@
-### Nathaniel Nikolai Ladero
+### nathwn12
 
 Backend developer working on fintech payment APIs, and on open-source tooling for coding agents.
 
