@@ -17,13 +17,12 @@ Backend Developer, Xentra Infotech Solutions Inc., 2023-2026.
 
 ## Projects
 
-- [puppet](https://github.com/nathwn12/puppet) — MCP server giving a coding agent screenshots, window control, and input on Windows.
-- [gladius](https://github.com/nathwn12/gladius) — MCP server giving a coding agent a browser it can drive.
-- [oc-collections](https://github.com/nathwn12/oc-collections) — OpenCode plugins, MCP servers, and tooling, each package installed on its own.
-- [Slowburn](https://github.com/nathwn12/slowburn) — Windows player that slows a track, adds reverb, and loops a passage.
-- [Potflix](https://github.com/nathwn12/potflix) — mirrors what plays in PotPlayer to a Discord status card.
-- [Audio Normalizer](https://github.com/nathwn12/my-chromium-extensions/tree/main/packages/audio-normalizer) — Chromium extension keeping every site at one loudness.
-- [Slowed Reverb](https://github.com/nathwn12/my-chromium-extensions/tree/main/packages/slowed-reverb) — Chromium extension slowing YouTube playback and adding plate reverb.
-- [Crunchy Presence](https://github.com/nathwn12/my-chromium-extensions/tree/main/packages/crunchy-presence) — Chromium extension showing the Crunchyroll episode being watched as Discord rich presence.
+- [gladius](https://github.com/nathwn12/gladius) — Rust MCP server; one binary over stdio drives a pinned chrome-headless-shell over CDP.
+- [puppet](https://github.com/nathwn12/puppet) — Rust MCP server; screenshots, lists, drives Windows windows and input, background-safe.
+- [Slowburn](https://github.com/nathwn12/slowburn) — Windows practice player; slows a track, adds reverb, loops a passage with A-B.
+- [Potflix](https://github.com/nathwn12/potflix) — Rust app; mirrors the current PotPlayer track to a Discord Rich Presence card.
+- [oc-collections](https://github.com/nathwn12/oc-collections) — OpenCode plugins, MCP servers, tooling, each package installed on its own.
+- [my-chromium-extensions](https://github.com/nathwn12/my-chromium-extensions) — unpacked Chromium extensions: loudness, slowdown, Crunchyroll.
+- [ArcInstaller](https://github.com/nathwn12/arc-installer) — C# and PowerShell installer; applies the ARC icon theme, reverts stock icons.
 
 [GitHub](https://github.com/nathwn12) · [Email](mailto:nathanielnikolai.ladero@gmail.com)
