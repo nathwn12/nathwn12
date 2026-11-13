@@ -242,9 +242,9 @@ export function renderCard({ npmMonth, contributions, commits, months, generated
     .join('\n')
 
   const numbers = [
-    { label: '9 packages · this month', value: formatNumber(npmMonth) },
-    { label: 'contributions · 12 mo', value: formatNumber(contributions) },
-    { label: 'commits · 12 mo', value: formatNumber(commits) }
+    { top: 'npm downloads', bottom: '30 days · 9 packages', value: formatNumber(npmMonth) },
+    { top: 'GitHub contributions', bottom: 'last 12 months', value: formatNumber(contributions) },
+    { top: 'GitHub commits', bottom: 'last 12 months', value: formatNumber(commits) }
   ]
   // One size for all three so their baselines stay level; shrink only if a number
   // would run into the next column. Advances at this weight: 0.52em a digit, 0.28em a comma.
@@ -256,9 +256,10 @@ export function renderCard({ npmMonth, contributions, commits, months, generated
   const numberSize =
     estimated <= room ? NUMBER_SIZE : Math.max(24, Math.floor((NUMBER_SIZE * room) / estimated))
   const stats = numbers
-    .map(({ label, value }, index) =>
+    .map(({ top, bottom, value }, index) =>
       [
-        text(RIGHT_X + index * COLUMN_W, LABEL_Y, 12, label, { weight: 400 }),
+        text(RIGHT_X + index * COLUMN_W, NUMBER_Y - 60, 12, top, { weight: 400 }),
+        text(RIGHT_X + index * COLUMN_W, NUMBER_Y - 44, 12, bottom, { weight: 400 }),
         text(RIGHT_X + index * COLUMN_W, NUMBER_Y, numberSize, value, { weight: 600 })
       ].join('\n')
     )
@@ -266,8 +267,8 @@ export function renderCard({ npmMonth, contributions, commits, months, generated
 
   const stamp = generated.toLocaleString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })
   const summary =
-    `${USER}: ${formatNumber(npmMonth)} npm downloads this month, ` +
-    `${formatNumber(contributions)} contributions and ${formatNumber(commits)} commits in the last 12 months`
+    `${USER}: ${formatNumber(npmMonth)} npm package downloads in the last 30 days across 9 packages, ` +
+    `${formatNumber(contributions)} GitHub contributions and ${formatNumber(commits)} commits in the last 12 months`
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(summary)}">
   <title>${esc(summary)}</title>
@@ -279,7 +280,7 @@ ${text(W - PAD, 44, 12, stamp, { anchor: 'end' })}
 ${bars}
   </g>
   <rect x="${CHART_X}" y="${BASELINE_Y}" width="${CHART_W}" height="1" fill="${BONE}"/>
-${text(CHART_X, 212, 12, 'contributions · last 12 months')}
+${text(CHART_X, 212, 12, 'contributions by month, last 12 months')}
 ${stats}
 </svg>
 `

@@ -19,14 +19,30 @@ Backend Developer, Xentra Infotech Solutions Inc., 2023-2026.
 
 ## Published
 
-**npm:** [gladius-mcp](https://www.npmjs.com/package/gladius-mcp) 0.7.1 · [puppet-mcp](https://www.npmjs.com/package/puppet-mcp) 7.0.2 · [@nathwn12/janua](https://www.npmjs.com/package/@nathwn12/janua) 0.5.1 · [@nathwn12/oc-bifrost](https://www.npmjs.com/package/@nathwn12/oc-bifrost) 1.7.1 · [oc-flight-deck](https://www.npmjs.com/package/oc-flight-deck) 0.22.1 · [oc-harness-setup](https://www.npmjs.com/package/oc-harness-setup) 1.0.2 · [oc-plugin-view](https://www.npmjs.com/package/oc-plugin-view) 0.2.0 · [oc-talk](https://www.npmjs.com/package/oc-talk) 0.4.1 · [rea-shim](https://www.npmjs.com/package/rea-shim) 0.2.4
+**On npm** — nine packages, each installed on its own:
 
-**Direct:** [ArcInstaller 0.2.2](https://github.com/nathwn12/arc-installer/releases) · [sp2yt 0.4.0](https://github.com/nathwn12/spotify-playlist-to-youtube/releases) · [four Chromium extensions](https://github.com/nathwn12/my-chromium-extensions/releases)
+- [gladius-mcp](https://www.npmjs.com/package/gladius-mcp)
+- [puppet-mcp](https://www.npmjs.com/package/puppet-mcp)
+- [@nathwn12/janua](https://www.npmjs.com/package/@nathwn12/janua)
+- [@nathwn12/oc-bifrost](https://www.npmjs.com/package/@nathwn12/oc-bifrost)
+- [oc-flight-deck](https://www.npmjs.com/package/oc-flight-deck)
+- [oc-harness-setup](https://www.npmjs.com/package/oc-harness-setup)
+- [oc-plugin-view](https://www.npmjs.com/package/oc-plugin-view)
+- [oc-talk](https://www.npmjs.com/package/oc-talk)
+- [rea-shim](https://www.npmjs.com/package/rea-shim)
+
+**Direct download:**
+
+- [ArcInstaller](https://github.com/nathwn12/arc-installer/releases) — applies the ARC icon theme to Windows, restores the stock set on revert
+- [sp2yt](https://github.com/nathwn12/spotify-playlist-to-youtube/releases) — copies a public Spotify playlist into YouTube Music
+- [Chromium extensions](https://github.com/nathwn12/my-chromium-extensions/releases) — loudness target, slowed playback, Discord presences
 
 ## Numbers
 
+Regenerated weekly from the npm registry and the GitHub API. No service in between.
+
 <p align="center">
-  <img src="assets/stats.svg" alt="npm downloads and GitHub contributions" />
+  <img src="assets/stats.svg" alt="npm downloads, GitHub contributions, and commits" />
 </p>
 
 ## Projects
