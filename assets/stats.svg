@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="240" viewBox="0 0 880 240" role="img" aria-label="nathwn12: 21,566 npm downloads this month, 5,400 contributions and 1,990 commits in the last 12 months">
+  <title>nathwn12: 21,566 npm downloads this month, 5,400 contributions and 1,990 commits in the last 12 months</title>
+  <rect width="880" height="240" fill="#0B0F14"/>
+  <rect x="32" y="62" width="816" height="1" fill="#E8EDF2"/>
+  <text x="32" y="44" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#E8EDF2">nathwn12</text>
+  <text x="848" y="44" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E8EDF2">November 2026</text>
+  <g>
+    <rect class="bar" x="35.33" y="196" width="20" height="0" fill="#4DD4E8" rx="1.5"><title>Dec 2025: 0</title></rect>
+    <rect class="bar" x="62" y="196" width="20" height="0" fill="#4DD4E8" rx="1.5"><title>Jan 2026: 0</title></rect>
+    <rect class="bar" x="88.67" y="196" width="20" height="0" fill="#4DD4E8" rx="1.5"><title>Feb 2026: 0</title></rect>
+    <rect class="bar" x="115.33" y="196" width="20" height="0" fill="#4DD4E8" rx="1.5"><title>Mar 2026: 0</title></rect>
+    <rect class="bar" x="142" y="193.02" width="20" height="2.98" fill="#4DD4E8" rx="1.5"><title>Apr 2026: 92</title></rect>
+    <rect class="bar" x="168.67" y="190.59" width="20" height="5.41" fill="#4DD4E8" rx="1.5"><title>May 2026: 167</title></rect>
+    <rect class="bar" x="195.33" y="194.5" width="20" height="1.5" fill="#4DD4E8" rx="1.5"><title>Jun 2026: 34</title></rect>
+    <rect class="bar" x="222" y="194.5" width="20" height="1.5" fill="#4DD4E8" rx="1.5"><title>Jul 2026: 8</title></rect>
+    <rect class="bar" x="248.67" y="194.5" width="20" height="1.5" fill="#4DD4E8" rx="1.5"><title>Aug 2026: 13</title></rect>
+    <rect class="bar" x="275.33" y="182.36" width="20" height="13.64" fill="#4DD4E8" rx="1.5"><title>Sep 2026: 421</title></rect>
+    <rect class="bar" x="302" y="96" width="20" height="100" fill="#4DD4E8" rx="1.5"><title>Oct 2026: 3,086</title></rect>
+    <rect class="bar" x="328.67" y="144.83" width="20" height="51.17" fill="#4DD4E8" rx="1.5"><title>Nov 2026: 1,579</title></rect>
+  </g>
+  <rect x="32" y="196" width="320" height="1" fill="#E8EDF2"/>
+  <text x="32" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E8EDF2">contributions · last 12 months</text>
+  <text x="396" y="128" font-weight="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E8EDF2">9 packages · this month</text>
+  <text x="396" y="172" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" fill="#E8EDF2">21,566</text>
+  <text x="546" y="128" font-weight="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E8EDF2">contributions · 12 mo</text>
+  <text x="546" y="172" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" fill="#E8EDF2">5,400</text>
+  <text x="696" y="128" font-weight="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E8EDF2">commits · 12 mo</text>
+  <text x="696" y="172" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" fill="#E8EDF2">1,990</text>
+</svg>
