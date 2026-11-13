@@ -1,6 +1,8 @@
-### nathwn12
-
-Backend developer with fintech experience: payments, data access, and authentication on AWS. Frontend too — React and Vue, shipped on the live portfolio and on current client work.
+<p align="center">
+  <img src="assets/icon.svg" width="120" height="120" alt="nathwn12 icon" />
+</p>
+<h1 align="center">nathwn12</h1>
+<p align="center"><strong>Backend developer with fintech experience: payments, data access, and authentication on AWS. Frontend too — React and Vue, shipped on the live portfolio and on current client work.</strong></p>
 
 **Open to work** — backend, frontend, and platform roles, remote.
 
@@ -38,4 +40,10 @@ Installable today, straight from the registry.
 - [vencord-bootstrap](https://github.com/nathwn12/vencord-bootstrap) — installs and repairs Vencord from the official upstream release with one PowerShell line.
 - [oc-collections](https://github.com/nathwn12/oc-collections) — OpenCode plugins, MCP servers, and tooling, each package installed on its own, never as a bundle.
 
-[GitHub](https://github.com/nathwn12) · [Email](mailto:nathanielnikolai.ladero@gmail.com)
+<!-- nathwn12 house footer: identical in every repo. Do not edit. -->
+<p align="center">
+  <a href="https://github.com/nathwn12"><img src="assets/signature.svg" width="96" alt="nathwn12" /></a>
+</p>
+<p align="center">
+  <sub>Built by <a href="https://github.com/nathwn12">nathwn12</a> · <a href="https://github.com/nathwn12?tab=repositories">All projects</a></sub>
+</p>
