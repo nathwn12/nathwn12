@@ -26,18 +26,8 @@ Backend Developer, Xentra Infotech Solutions Inc., 2023-2026.
 ## Numbers
 
 <p align="center">
-  <img src="https://img.shields.io/npm/dt/gladius-mcp?label=gladius" alt="gladius-mcp downloads" />
-  <img src="https://img.shields.io/npm/dt/puppet-mcp?label=puppet" alt="puppet-mcp downloads" />
-  <img src="https://img.shields.io/npm/dt/@nathwn12/janua?label=janua" alt="janua downloads" />
+  <img src="assets/stats.svg" alt="npm downloads and GitHub contributions" />
 </p>
-
-<!-- stats:start -->
-**npm** — 2,523 last week · 21,566 last month · 31,686 total, across nine packages
-**GitHub** — 1,989 commits, 298 pull requests, 5,379 contributions in the last 12 months
-
-<sub>Read from the npm registry and the GitHub API on 2026-11-13. The badges above and this block refresh themselves.</sub>
-<!-- stats:end -->
-
 
 ## Projects
 
