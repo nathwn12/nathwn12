@@ -19,9 +19,25 @@ Backend Developer, Xentra Infotech Solutions Inc., 2023-2026.
 
 ## Published
 
-**npm** — [`gladius-mcp`](https://www.npmjs.com/package/gladius-mcp) 0.7.1 · [`puppet-mcp`](https://www.npmjs.com/package/puppet-mcp) 7.0.2 · [`@nathwn12/janua`](https://www.npmjs.com/package/@nathwn12/janua) 0.5.1
+**npm:** [gladius-mcp](https://www.npmjs.com/package/gladius-mcp) 0.7.1 · [puppet-mcp](https://www.npmjs.com/package/puppet-mcp) 7.0.2 · [@nathwn12/janua](https://www.npmjs.com/package/@nathwn12/janua) 0.5.1 · [@nathwn12/oc-bifrost](https://www.npmjs.com/package/@nathwn12/oc-bifrost) 1.7.1 · [oc-flight-deck](https://www.npmjs.com/package/oc-flight-deck) 0.22.1 · [oc-harness-setup](https://www.npmjs.com/package/oc-harness-setup) 1.0.2 · [oc-plugin-view](https://www.npmjs.com/package/oc-plugin-view) 0.2.0 · [oc-talk](https://www.npmjs.com/package/oc-talk) 0.4.1 · [rea-shim](https://www.npmjs.com/package/rea-shim) 0.2.4
 
-**Binaries** — [ArcInstaller 0.2.2](https://github.com/nathwn12/arc-installer/releases) · [sp2yt 0.4.0](https://github.com/nathwn12/spotify-playlist-to-youtube/releases) · [four Chromium extensions](https://github.com/nathwn12/my-chromium-extensions/releases)
+**Direct:** [ArcInstaller 0.2.2](https://github.com/nathwn12/arc-installer/releases) · [sp2yt 0.4.0](https://github.com/nathwn12/spotify-playlist-to-youtube/releases) · [four Chromium extensions](https://github.com/nathwn12/my-chromium-extensions/releases)
+
+## Numbers
+
+<p align="center">
+  <img src="https://img.shields.io/npm/dt/gladius-mcp?label=gladius" alt="gladius-mcp downloads" />
+  <img src="https://img.shields.io/npm/dt/puppet-mcp?label=puppet" alt="puppet-mcp downloads" />
+  <img src="https://img.shields.io/npm/dt/@nathwn12/janua?label=janua" alt="janua downloads" />
+</p>
+
+<!-- stats:start -->
+**npm** — 2,523 last week · 21,566 last month · 31,686 total, across nine packages
+**GitHub** — 1,989 commits, 298 pull requests, 5,379 contributions in the last 12 months
+
+<sub>Read from the npm registry and the GitHub API on 2026-11-13. The badges above and this block refresh themselves.</sub>
+<!-- stats:end -->
+
 
 ## Projects
 
