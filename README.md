@@ -2,7 +2,6 @@
   <img src="assets/icon.svg" width="120" height="120" alt="nathwn12 icon" />
 </p>
 <h1 align="center">nathwn12</h1>
-<p align="center"><strong>Backend developer with fintech experience: payments, data access, auth on AWS. Frontend too: React and Vue.</strong></p>
 
 **Open to work** — backend, frontend, and platform roles, remote.
 
