@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Regenerates assets/stats.svg: npm downloads this month plus GitHub activity.
+// Regenerates assets/stats.svg: npm downloads and GitHub activity.
 // Standard library and fetch only — no dependencies, no build step.
 //
 //   node scripts/stats.mjs            write assets/stats.svg
@@ -23,7 +23,10 @@ const PACKAGES = [
   'oc-talk',
   'rea-shim'
 ]
-const NPM_RANGES = { week: 'last-week', month: 'last-month', allTime: '2015-01-01:2030-01-01' }
+const NPM_RANGES = { week: 'last-week', month: 'last-month' }
+const DAY_MS = 86400000
+const isoDate = (date) => date.toISOString().slice(0, 10)
+const addDays = (date, days) => isoDate(new Date(Date.parse(`${date}T00:00:00Z`) + days * DAY_MS))
 const MONTHS = 12
 
 const GROUND = '#0B0F14'
@@ -32,7 +35,7 @@ const ACCENT = '#4DD4E8'
 const FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
 
 // Geometry, one grid for the whole card.
-const W = 880
+const W = 1030
 const H = 240
 const PAD = 32
 const RULE_Y = 62
@@ -93,7 +96,33 @@ function npmFetch(url) {
   return request
 }
 
-async function npmDownloads(pkg) {
+export async function allTimeDownloads(pkg, through, getJson = npmFetch) {
+  const id = encodeURIComponent(pkg)
+  const metadata = await getJson(`https://registry.npmjs.org/${id}`)
+  if (metadata.name !== pkg || !metadata.time?.created || !metadata.maintainers?.some((m) => m.name === USER)) {
+    throw new Error(`npm registry metadata is incomplete for ${pkg}`)
+  }
+  let start = metadata.time.created.slice(0, 10)
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(start) || Number.isNaN(Date.parse(`${start}T00:00:00Z`)) || start > through) {
+    throw new Error(`invalid registration date for ${pkg}`)
+  }
+  let total = 0
+  while (start <= through) {
+    const limit = addDays(start, 364)
+    const end = limit < through ? limit : through
+    const body = await getJson(`https://api.npmjs.org/downloads/point/${start}:${end}/${id}`)
+    if (body.package !== pkg || body.start !== start || body.end !== end ||
+        !Number.isSafeInteger(body.downloads) || body.downloads < 0) {
+      throw new Error(`npm returned an incomplete download range for ${pkg}: ${start}:${end}`)
+    }
+    total += body.downloads
+    if (!Number.isSafeInteger(total)) throw new Error(`npm total exceeds safe integer range for ${pkg}`)
+    start = addDays(end, 1)
+  }
+  return total
+}
+
+async function npmDownloads(pkg, through) {
   const id = encodeURIComponent(pkg) // scoped names keep their "/" escaped
   const counts = {}
   for (const [label, range] of Object.entries(NPM_RANGES)) {
@@ -103,7 +132,7 @@ async function npmDownloads(pkg) {
     }
     counts[label] = body.downloads
   }
-  return { package: pkg, week: counts.week, month: counts.month, allTime: counts.allTime }
+  return { package: pkg, week: counts.week, month: counts.month, allTime: await allTimeDownloads(pkg, through) }
 }
 
 function ghGraphQL() {
@@ -221,7 +250,7 @@ function text(x, y, size, content, options = {}) {
   )
 }
 
-export function renderCard({ npmMonth, contributions, commits, months, generated }) {
+export function renderCard({ npmMonth, npmAllTime, through, contributions, commits, months, generated }) {
   const n = months.length
   const slot = CHART_W / n
   const barWidth = 20
@@ -243,10 +272,11 @@ export function renderCard({ npmMonth, contributions, commits, months, generated
 
   const numbers = [
     { top: 'npm downloads', bottom: '30 days · 9 packages', value: formatNumber(npmMonth) },
+    { top: 'npm downloads', bottom: 'all-time · 9 packages', value: formatNumber(npmAllTime) },
     { top: 'GitHub contributions', bottom: 'last 12 months', value: formatNumber(contributions) },
     { top: 'GitHub commits', bottom: 'last 12 months', value: formatNumber(commits) }
   ]
-  // One size for all three so their baselines stay level; shrink only if a number
+  // One size for all four so their baselines stay level; shrink only if a number
   // would run into the next column. Advances at this weight: 0.52em a digit, 0.28em a comma.
   const room = COLUMN_W - COLUMN_GAP
   const widest = numbers.map(({ value }) => value).reduce((a, b) => (b.length > a.length ? b : a))
@@ -267,7 +297,8 @@ export function renderCard({ npmMonth, contributions, commits, months, generated
 
   const stamp = generated.toLocaleString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })
   const summary =
-    `${USER}: ${formatNumber(npmMonth)} npm package downloads in the last 30 days across 9 packages, ` +
+    `${USER}: ${formatNumber(npmMonth)} npm package downloads in the last 30 days, ` +
+    `${formatNumber(npmAllTime)} all-time npm downloads across 9 packages through ${through}, ` +
     `${formatNumber(contributions)} GitHub contributions and ${formatNumber(commits)} commits in the last 12 months`
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(summary)}">
@@ -281,6 +312,7 @@ ${bars}
   </g>
   <rect x="${CHART_X}" y="${BASELINE_Y}" width="${CHART_W}" height="1" fill="${BONE}"/>
 ${text(CHART_X, 212, 12, 'contributions by month, last 12 months')}
+${text(RIGHT_X + COLUMN_W, 196, 10, `through ${through}`)}
 ${stats}
 </svg>
 `
@@ -289,8 +321,9 @@ ${stats}
 // ---------------------------------------------------------------------- main
 
 async function collect() {
+  const through = addDays(isoDate(new Date()), -3)
   const npm = []
-  for (const pkg of PACKAGES) npm.push(await npmDownloads(pkg))
+  for (const pkg of PACKAGES) npm.push(await npmDownloads(pkg, through))
   const activity = await githubActivity()
   const days = activity.contributionCalendar.weeks.flatMap((week) => week.contributionDays)
   const months = bucketMonths(days, MONTHS)
@@ -300,6 +333,8 @@ async function collect() {
       generatedAt: new Date().toISOString(),
       npm,
       npmDownloadsThisMonth: npm.reduce((sum, p) => sum + p.month, 0),
+      npmDownloadsAllTime: npm.reduce((sum, p) => sum + p.allTime, 0),
+      npmDownloadsThrough: through,
       github: {
         contributions: activity.contributionCalendar.totalContributions,
         commits: activity.totalCommitContributions,
@@ -321,6 +356,8 @@ async function main() {
   const { generated, report } = await collect()
   const svg = renderCard({
     npmMonth: report.npmDownloadsThisMonth,
+    npmAllTime: report.npmDownloadsAllTime,
+    through: report.npmDownloadsThrough,
     contributions: report.github.contributions,
     commits: report.github.commits,
     months: report.months,

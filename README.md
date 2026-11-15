@@ -29,7 +29,7 @@ I build and maintain projects independently, and publish packages on npm. Here a
 [gladius-mcp](https://www.npmjs.com/package/gladius-mcp) · [puppet-mcp](https://www.npmjs.com/package/puppet-mcp) · [@nathwn12/janua](https://www.npmjs.com/package/@nathwn12/janua) · [@nathwn12/oc-bifrost](https://www.npmjs.com/package/@nathwn12/oc-bifrost) · [oc-flight-deck](https://www.npmjs.com/package/oc-flight-deck) · [oc-harness-setup](https://www.npmjs.com/package/oc-harness-setup) · [oc-plugin-view](https://www.npmjs.com/package/oc-plugin-view) · [oc-talk](https://www.npmjs.com/package/oc-talk) · [rea-shim](https://www.npmjs.com/package/rea-shim)
 
 <p align="center">
-  <img src="assets/stats.svg" alt="npm downloads over the last 30 days, and GitHub contributions and commits over the last 12 months" />
+  <img src="assets/stats.svg" alt="npm downloads over the last 30 days and all time, and GitHub contributions and commits over the last 12 months" />
 </p>
 
 <p align="center">
