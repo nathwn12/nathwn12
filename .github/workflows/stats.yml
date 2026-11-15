@@ -2,7 +2,7 @@ name: stats
 
 on:
   schedule:
-    - cron: '0 6 * * 1'
+    - cron: '0 6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -21,6 +21,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '26'
+
+      - name: Test the card renderer
+        run: node --test scripts/stats.test.mjs
 
       - name: Render the stats card
         env:
