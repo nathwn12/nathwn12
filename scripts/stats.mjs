@@ -27,11 +27,12 @@ const NPM_RANGES = { week: 'last-week', month: 'last-month' }
 const DAY_MS = 86400000
 const isoDate = (date) => date.toISOString().slice(0, 10)
 const addDays = (date, days) => isoDate(new Date(Date.parse(`${date}T00:00:00Z`) + days * DAY_MS))
-const MONTHS = 12
+const ACTIVITY_DAYS = 30
 
 const GROUND = '#0B0F14'
 const BONE = '#E8EDF2'
 const ACCENT = '#4DD4E8'
+const ACTIVITY_LEVELS = ['#1c3039', '#23606b', '#3293a2', ACCENT]
 const FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
 
 // Geometry, one grid for the whole card.
@@ -41,8 +42,11 @@ const PAD = 32
 const RULE_Y = 62
 const CHART_X = PAD
 const CHART_W = 320
-const CHART_TOP = 96
-const BASELINE_Y = 196
+const ACTIVITY_COLUMNS = 15
+const CELL = 15
+const CELL_STEP_X = 21.3
+const CELL_STEP_Y = 24
+const GRID_Y = 120
 const RIGHT_X = 396
 const COLUMN_W = 150
 const COLUMN_GAP = 12
@@ -198,48 +202,39 @@ export function formatNumber(value) {
   return sign + String(Math.abs(integer)).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 }
 
-const monthKeyOf = (date) => date.slice(0, 7)
-
-function monthLabel(key) {
-  const [year, month] = key.split('-').map(Number)
-  const name = new Date(Date.UTC(year, month - 1, 1)).toLocaleString('en-US', {
-    month: 'short',
-    timeZone: 'UTC'
-  })
-  return name
-}
-
-function monthKeysEndingAt(key, count) {
-  const [year, month] = key.split('-').map(Number)
-  const keys = []
-  for (let back = count - 1; back >= 0; back--) {
-    const date = new Date(Date.UTC(year, month - 1 - back, 1))
-    const y = date.getUTCFullYear()
-    const m = String(date.getUTCMonth() + 1).padStart(2, '0')
-    keys.push(`${y}-${m}`)
-  }
-  return keys
-}
-
-// Buckets the calendar's days into `count` calendar months ending with the newest one,
-// so the newest partial month stays honest instead of being merged into a neighbour.
-export function bucketMonths(days, count = MONTHS) {
-  if (!Array.isArray(days) || days.length === 0) throw new Error('the contribution calendar is empty')
-  const totals = new Map()
-  for (const day of days) {
-    const key = monthKeyOf(day.date)
-    totals.set(key, (totals.get(key) ?? 0) + day.contributionCount)
-  }
-  const keys = [...totals.keys()].sort()
-  return monthKeysEndingAt(keys[keys.length - 1], count).map((key) => ({
-    month: key,
-    label: monthLabel(key),
-    value: totals.get(key) ?? 0
-  }))
-}
-
 const round = (value) => Number(value.toFixed(2))
 const esc = (value) => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+
+// The newest days in the calendar, oldest first. A date inside the window that the
+// calendar does not carry is a failure, never a zero: a missing day is missing data.
+export function recentDays(days, count = ACTIVITY_DAYS) {
+  if (!Array.isArray(days) || days.length === 0) throw new Error('the contribution calendar is empty')
+  const byDate = new Map(days.map((day) => [day.date, day.contributionCount]))
+  const last = days.at(-1).date
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(last)) throw new Error(`invalid contribution date: ${last}`)
+  return Array.from({ length: count }, (_, index) => {
+    const date = addDays(last, index - count + 1)
+    if (!byDate.has(date)) throw new Error(`the contribution calendar is missing ${date}`)
+    const value = byDate.get(date)
+    if (!Number.isSafeInteger(value) || value < 0) throw new Error(`invalid contribution count for ${date}`)
+    return { date, value }
+  })
+}
+
+// Thirds of the active days, so a busy month still shows contrast instead of
+// saturating every cell. Zero stays the empty tone.
+export function levelFor(days) {
+  const active = days.map((day) => day.value).filter((value) => value > 0).sort((a, b) => a - b)
+  if (active.length === 0) return () => 0
+  const at = (fraction) => active[Math.min(active.length - 1, Math.floor(fraction * active.length))]
+  const cuts = [at(1 / 3), at(2 / 3)]
+  return (value) => {
+    if (value <= 0) return 0
+    if (value <= cuts[0]) return 1
+    if (value <= cuts[1]) return 2
+    return 3
+  }
+}
 
 function text(x, y, size, content, options = {}) {
   const anchor = options.anchor ? ` text-anchor="${options.anchor}"` : ''
@@ -250,22 +245,19 @@ function text(x, y, size, content, options = {}) {
   )
 }
 
-export function renderCard({ npmMonth, npmAllTime, through, contributions, commits, months, generated }) {
-  const n = months.length
-  const slot = CHART_W / n
-  const barWidth = 20
-  const max = Math.max(1, ...months.map((m) => m.value))
-  const chartHeight = BASELINE_Y - CHART_TOP
-
-  const bars = months
-    .map((month, index) => {
-      const height = month.value === 0 ? 0 : Math.max(1.5, (month.value / max) * chartHeight)
-      const x = round(CHART_X + index * slot + (slot - barWidth) / 2)
-      const y = round(BASELINE_Y - height)
+export function renderCard({ npmMonth, npmAllTime, through, contributions, commits, activity, generated }) {
+  if (!Array.isArray(activity) || activity.length !== ACTIVITY_DAYS) {
+    throw new Error(`expected ${ACTIVITY_DAYS} activity days, got ${Array.isArray(activity) ? activity.length : 'none'}`)
+  }
+  const level = levelFor(activity)
+  const activeDays = activity.filter((day) => day.value > 0).length
+  const cells = activity
+    .map((day, index) => {
+      const x = round(CHART_X + (index % ACTIVITY_COLUMNS) * CELL_STEP_X)
+      const y = GRID_Y + Math.floor(index / ACTIVITY_COLUMNS) * CELL_STEP_Y
       return (
-        `    <rect class="bar" x="${x}" y="${y}" width="${barWidth}" height="${round(height)}" ` +
-        `fill="${ACCENT}" rx="1.5"><title>${esc(month.label)} ${month.month.slice(0, 4)}: ` +
-        `${formatNumber(month.value)}</title></rect>`
+        `    <rect x="${x}" y="${y}" width="${CELL}" height="${CELL}" fill="${ACTIVITY_LEVELS[level(day.value)]}">` +
+        `<title>${esc(day.date)}: ${formatNumber(day.value)} contributions</title></rect>`
       )
     })
     .join('\n')
@@ -299,7 +291,8 @@ export function renderCard({ npmMonth, npmAllTime, through, contributions, commi
   const summary =
     `${USER}: ${formatNumber(npmMonth)} npm package downloads in the last 30 days, ` +
     `${formatNumber(npmAllTime)} all-time npm downloads across 9 packages through ${through}, ` +
-    `${formatNumber(contributions)} GitHub contributions and ${formatNumber(commits)} commits in the last 12 months`
+    `${formatNumber(contributions)} GitHub contributions and ${formatNumber(commits)} commits in the last 12 months; ` +
+    `${activeDays} active days from ${activity[0].date} through ${activity.at(-1).date}`
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(summary)}">
   <title>${esc(summary)}</title>
@@ -307,11 +300,13 @@ export function renderCard({ npmMonth, npmAllTime, through, contributions, commi
   <rect x="${PAD}" y="${RULE_Y}" width="${W - PAD * 2}" height="1" fill="${BONE}"/>
 ${text(PAD, 44, 16, USER, { weight: 600 })}
 ${text(W - PAD, 44, 12, stamp, { anchor: 'end' })}
-  <g>
-${bars}
+  <g aria-label="Daily GitHub contributions for the last 30 days">
+${cells}
   </g>
-  <rect x="${CHART_X}" y="${BASELINE_Y}" width="${CHART_W}" height="1" fill="${BONE}"/>
-${text(CHART_X, 212, 12, 'contributions by month, last 12 months')}
+${text(CHART_X, 105, 12, 'recent activity · last 30 days')}
+${text(CHART_X, 190, 12, `${activeDays} active days`)}
+${text(CHART_X, 212, 10, 'earlier')}
+${text(CHART_X + CHART_W, 212, 10, 'recent', { anchor: 'end' })}
 ${text(RIGHT_X + COLUMN_W, 196, 10, `through ${through}`)}
 ${stats}
 </svg>
@@ -326,7 +321,6 @@ async function collect() {
   for (const pkg of PACKAGES) npm.push(await npmDownloads(pkg, through))
   const activity = await githubActivity()
   const days = activity.contributionCalendar.weeks.flatMap((week) => week.contributionDays)
-  const months = bucketMonths(days, MONTHS)
   return {
     generated: new Date(),
     report: {
@@ -342,7 +336,7 @@ async function collect() {
         calendarDays: days.length,
         calendarRange: [days[0].date, days[days.length - 1].date]
       },
-      months
+      activity: recentDays(days)
     }
   }
 }
@@ -360,7 +354,7 @@ async function main() {
     through: report.npmDownloadsThrough,
     contributions: report.github.contributions,
     commits: report.github.commits,
-    months: report.months,
+    activity: report.activity,
     generated
   })
 
