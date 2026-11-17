@@ -1,0 +1,16 @@
+# Dependabot version updates.
+#
+# Actions only. The profile has no package manifest: scripts/ uses Node
+# built-ins only and runs on `node --test`, so there is nothing for an npm
+# entry to read. `github-actions` is the only ecosystem with dependencies.
+
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "03:30"
+      timezone: "Asia/Manila"
+    open-pull-requests-limit: 5
