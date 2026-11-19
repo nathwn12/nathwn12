@@ -67,7 +67,6 @@ const ACTIVITY_QUERY = `query {
   }
 }`
 
-// ---------------------------------------------------------------- fetch layer
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
@@ -194,7 +193,6 @@ async function githubActivity() {
   return unwrapActivity(payload)
 }
 
-// -------------------------------------------------------------- pure helpers
 
 export function formatNumber(value) {
   const integer = Math.trunc(value)
@@ -313,7 +311,6 @@ ${stats}
 `
 }
 
-// ---------------------------------------------------------------------- main
 
 async function collect() {
   const through = addDays(isoDate(new Date()), -3)
