@@ -1,9 +1,5 @@
 #!/usr/bin/env node
-// Regenerates assets/stats.svg: npm downloads and GitHub activity.
 // Standard library and fetch only — no dependencies, no build step.
-//
-//   node scripts/stats.mjs            write assets/stats.svg
-//   node scripts/stats.mjs --dry-run  print every fetched number as JSON, write nothing
 
 import { execFile } from 'node:child_process'
 import { mkdir, writeFile } from 'node:fs/promises'
@@ -35,7 +31,6 @@ const ACCENT = '#4DD4E8'
 const ACTIVITY_LEVELS = ['#1c3039', '#23606b', '#3293a2', ACCENT]
 const FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
 
-// Geometry, one grid for the whole card.
 const W = 1030
 const H = 240
 const PAD = 32
@@ -80,14 +75,12 @@ async function fetchJson(url, init) {
     if (!retryable || attempt === delays.length) {
       throw new Error(`HTTP ${response.status} ${response.statusText} for ${url} — ${body}`)
     }
-    // The npm point API rate-limits bursts; back off, then still fail loudly.
     const header = Number(response.headers.get('retry-after'))
     const wait = Number.isFinite(header) && header > 0 && header <= 60 ? header * 1000 : delays[attempt]
     await sleep(wait)
   }
 }
 
-// One npm request in flight at a time, spaced out: the point API 429s on bursts.
 let npmQueue = Promise.resolve()
 function npmFetch(url) {
   const request = npmQueue.then(async () => {
@@ -203,8 +196,6 @@ export function formatNumber(value) {
 const round = (value) => Number(value.toFixed(2))
 const esc = (value) => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
-// The newest days in the calendar, oldest first. A date inside the window that the
-// calendar does not carry is a failure, never a zero: a missing day is missing data.
 export function recentDays(days, count = ACTIVITY_DAYS) {
   if (!Array.isArray(days) || days.length === 0) throw new Error('the contribution calendar is empty')
   const byDate = new Map(days.map((day) => [day.date, day.contributionCount]))
@@ -219,8 +210,6 @@ export function recentDays(days, count = ACTIVITY_DAYS) {
   })
 }
 
-// Thirds of the active days, so a busy month still shows contrast instead of
-// saturating every cell. Zero stays the empty tone.
 export function levelFor(days) {
   const active = days.map((day) => day.value).filter((value) => value > 0).sort((a, b) => a - b)
   if (active.length === 0) return () => 0
@@ -266,8 +255,6 @@ export function renderCard({ npmMonth, npmAllTime, through, contributions, commi
     { top: 'GitHub contributions', bottom: 'last 12 months', value: formatNumber(contributions) },
     { top: 'GitHub commits', bottom: 'last 12 months', value: formatNumber(commits) }
   ]
-  // One size for all four so their baselines stay level; shrink only if a number
-  // would run into the next column. Advances at this weight: 0.52em a digit, 0.28em a comma.
   const room = COLUMN_W - COLUMN_GAP
   const widest = numbers.map(({ value }) => value).reduce((a, b) => (b.length > a.length ? b : a))
   const digits = (widest.match(/\d/g) ?? []).length

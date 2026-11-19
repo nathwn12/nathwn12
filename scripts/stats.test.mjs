@@ -58,7 +58,6 @@ test('renderCard draws 30 cells in two rows of 15 without dropping counts', () =
   assert.equal(cells[15][1], '32')
   assert.equal(cells[15][2], '144')
 
-  // The seam that broke: counts must survive collect -> render, not collapse to zero.
   assert.match(svg, /<title>2026-11-16: 359 contributions<\/title>/)
   assert.match(svg, /<title>2026-10-18: 92 contributions<\/title>/)
   assert.match(svg, />2 active days<\/text>/)
