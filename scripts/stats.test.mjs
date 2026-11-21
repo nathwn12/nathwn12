@@ -1,5 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
+import { readFile } from 'node:fs/promises'
 import { levelFor, recentDays, renderCard } from './stats.mjs'
 
 const daysEndingAt = (last, counts = {}) =>
@@ -87,4 +88,23 @@ test('renderCard keeps the four headline numbers and the npm date', () => {
 
 test('renderCard rejects an activity list that is not 30 days', () => {
   assert.throws(() => card([{ date: '2026-11-16', value: 1 }]), /expected 30 activity days/)
+})
+
+const readme = () => readFile(new URL('../README.md', import.meta.url), 'utf8')
+
+test('README counts the ten published npm packages including hand-mcp', async () => {
+  const text = await readme()
+  assert.match(text, /ten packages I maintain/)
+  const links = [...text.matchAll(/npmjs\.com\/package\/([^)]+)/g)].map((match) => match[1])
+  assert.equal(links.length, 10, 'the README must list all ten published packages')
+  assert.ok(links.includes('hand-mcp'), 'hand-mcp must appear in the package list')
+})
+
+test('README leads the project list with the shipped hand MCP server', async () => {
+  const text = await readme()
+  const section = text.slice(text.indexOf('## Selected projects'), text.indexOf('## Open source'))
+  const first = section.split('\n').find((line) => line.startsWith('- '))
+  assert.match(first, /\[Hand\]\(https:\/\/github\.com\/nathwn12\/hand\)/)
+  assert.match(first, /npm-published/)
+  assert.match(first, /released this week/)
 })

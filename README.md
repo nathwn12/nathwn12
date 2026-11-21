@@ -15,18 +15,26 @@ Backend development, APIs, databases, authentication, and frontend applications.
 
 ## Selected projects
 
-- [Gladius](https://github.com/nathwn12/gladius) — Rust MCP server for headless Chrome over CDP.
-- [Puppet](https://github.com/nathwn12/puppet) — Rust MCP server for background-safe Windows control.
-- [Chromium extensions](https://github.com/nathwn12/my-chromium-extensions) — Four browser extensions for audio and presence.
-- [Arc Installer](https://github.com/nathwn12/arc-installer) — Windows installer and repair tool for the ARC icon theme.
+- [Hand](https://github.com/nathwn12/hand) — npm-published MCP server for browser and Windows desktop automation; 40 tools, released this week.
+- [Gladius](https://github.com/nathwn12/gladius) — MCP server that gives an agent a headless Chromium browser over CDP.
+- [Puppet](https://github.com/nathwn12/puppet) — MCP server for Windows desktop control without stealing focus or moving the pointer.
+- [oc-collections](https://github.com/nathwn12/oc-collections) — Installs OpenCode plugins, MCP servers, and CLIs one package at a time.
+- [oc-templates](https://github.com/nathwn12/oc-templates) — Scaffolds an OpenCode v2 plugin with a dependency-free stdio MCP server.
+- [AIMP Discord Presence](https://github.com/nathwn12/aimp-discord-presence) — Shows the current AIMP track on Discord with artist, track, and album art.
+- [Potflix](https://github.com/nathwn12/potflix) — Shows the current PotPlayer title on Discord with matched artwork and episode details.
+- [Pear Slowed Reverb](https://github.com/nathwn12/pear-slowed-reverb) — Runs YouTube Music in a maintained Pear Desktop fork that ships its own builds.
+- [Slowburn](https://github.com/nathwn12/slowburn) — Slows tracks, adds reverb, and saves an A-B loop per song on Windows.
+- [bytefry](https://github.com/nathwn12/bytefry) — Deep-fries images locally on Windows with repeat JPEG crush, a bulge, and five filters.
+- [Vencord Bootstrap](https://github.com/nathwn12/vencord-bootstrap) — Installs and repairs Vencord from the official release with one PowerShell line.
+- [Arc Installer](https://github.com/nathwn12/arc-installer) — Installs and repairs the ARC icon theme on Windows 10 and 11.
 - [sp2yt](https://github.com/nathwn12/spotify-playlist-to-youtube) — Copies a public Spotify playlist into YouTube Music without an API key.
-- [Slowburn](https://github.com/nathwn12/slowburn) — Windows media player with slowed reverb and an A-B loop.
+- [Chromium extensions](https://github.com/nathwn12/my-chromium-extensions) — Normalizes site loudness, slows playback with reverb, and reports media presence.
 
 ## Open source
 
-I build and maintain projects independently, and publish packages on npm. Here are nine packages I maintain:
+I build and maintain projects independently, and publish packages on npm. Here are ten packages I maintain:
 
-[gladius-mcp](https://www.npmjs.com/package/gladius-mcp) · [puppet-mcp](https://www.npmjs.com/package/puppet-mcp) · [@nathwn12/janua](https://www.npmjs.com/package/@nathwn12/janua) · [@nathwn12/oc-bifrost](https://www.npmjs.com/package/@nathwn12/oc-bifrost) · [oc-flight-deck](https://www.npmjs.com/package/oc-flight-deck) · [oc-harness-setup](https://www.npmjs.com/package/oc-harness-setup) · [oc-plugin-view](https://www.npmjs.com/package/oc-plugin-view) · [oc-talk](https://www.npmjs.com/package/oc-talk) · [rea-shim](https://www.npmjs.com/package/rea-shim)
+[hand-mcp](https://www.npmjs.com/package/hand-mcp) · [gladius-mcp](https://www.npmjs.com/package/gladius-mcp) · [puppet-mcp](https://www.npmjs.com/package/puppet-mcp) · [@nathwn12/janua](https://www.npmjs.com/package/@nathwn12/janua) · [@nathwn12/oc-bifrost](https://www.npmjs.com/package/@nathwn12/oc-bifrost) · [oc-flight-deck](https://www.npmjs.com/package/oc-flight-deck) · [oc-harness-setup](https://www.npmjs.com/package/oc-harness-setup) · [oc-plugin-view](https://www.npmjs.com/package/oc-plugin-view) · [oc-talk](https://www.npmjs.com/package/oc-talk) · [rea-shim](https://www.npmjs.com/package/rea-shim)
 
 <p align="center">
   <img src="assets/stats.svg" alt="npm downloads for the last 30 days and all time, GitHub contributions and commits for the last 12 months, and daily contributions for the last 30 days" />
