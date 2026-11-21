@@ -10,6 +10,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 const USER = 'nathwn12'
 const PACKAGES = [
   'gladius-mcp',
+  'hand-mcp',
   'puppet-mcp',
   '@nathwn12/janua',
   '@nathwn12/oc-bifrost',
@@ -250,8 +251,8 @@ export function renderCard({ npmMonth, npmAllTime, through, contributions, commi
     .join('\n')
 
   const numbers = [
-    { top: 'npm downloads', bottom: '30 days · 9 packages', value: formatNumber(npmMonth) },
-    { top: 'npm downloads', bottom: 'all-time · 9 packages', value: formatNumber(npmAllTime) },
+    { top: 'npm downloads', bottom: `30 days · ${PACKAGES.length} packages`, value: formatNumber(npmMonth) },
+    { top: 'npm downloads', bottom: `all-time · ${PACKAGES.length} packages`, value: formatNumber(npmAllTime) },
     { top: 'GitHub contributions', bottom: 'last 12 months', value: formatNumber(contributions) },
     { top: 'GitHub commits', bottom: 'last 12 months', value: formatNumber(commits) }
   ]
@@ -275,7 +276,7 @@ export function renderCard({ npmMonth, npmAllTime, through, contributions, commi
   const stamp = generated.toLocaleString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })
   const summary =
     `${USER}: ${formatNumber(npmMonth)} npm package downloads in the last 30 days, ` +
-    `${formatNumber(npmAllTime)} all-time npm downloads across 9 packages through ${through}, ` +
+    `${formatNumber(npmAllTime)} all-time npm downloads across ${PACKAGES.length} packages through ${through}, ` +
     `${formatNumber(contributions)} GitHub contributions and ${formatNumber(commits)} commits in the last 12 months; ` +
     `${activeDays} active days from ${activity[0].date} through ${activity.at(-1).date}`
 

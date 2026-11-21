@@ -86,6 +86,13 @@ test('renderCard keeps the four headline numbers and the npm date', () => {
   assert.match(svg, /through 2026-10-30/)
 })
 
+test('renderCard labels npm totals with the measured ten packages', () => {
+  const svg = card(recentDays(daysEndingAt('2026-11-16')))
+  assert.match(svg, /30 days · 10 packages/)
+  assert.match(svg, /all-time · 10 packages/)
+  assert.match(svg, /across 10 packages through 2026-10-30/)
+})
+
 test('renderCard rejects an activity list that is not 30 days', () => {
   assert.throws(() => card([{ date: '2026-11-16', value: 1 }]), /expected 30 activity days/)
 })
