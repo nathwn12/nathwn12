@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icon.svg" width="120" height="120" alt="nathwn12 icon" />
+  <img src="assets/signature-glyph.svg" width="120" height="120" alt="nathwn12 icon" />
 </p>
 <h1 align="center">Hi, I’m Nathan</h1>
 
