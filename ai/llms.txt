@@ -1,0 +1,13 @@
+---
+project: nathwn12
+one_line: Profile README. The work lives in the repos linked below.
+stack: [JavaScript]
+status: draft
+since: 2026-10
+capabilities: []
+limits: []
+updated: 2026-11-22
+draft: true
+---
+
+I'm a full-stack developer with three years of professional backend experience and frontend experience from building my own projects. I build and maintain software with AI-assisted tools as part of my daily workflow.
