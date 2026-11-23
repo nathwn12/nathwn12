@@ -15,9 +15,9 @@ Backend development, APIs, databases, authentication, and frontend applications.
 
 ## Selected projects
 
-- [Hand](https://github.com/nathwn12/hand) — npm-published MCP server for browser and Windows desktop automation; 40 tools, released this week.
-- [Gladius](https://github.com/nathwn12/gladius) — MCP server that gives an agent a headless Chromium browser over CDP.
-- [Puppet](https://github.com/nathwn12/puppet) — MCP server for Windows desktop control without stealing focus or moving the pointer.
+- [Hand](https://github.com/nathwn12/hand) — Browser automation and Windows computer use in one MCP server: headless Chrome over CDP, native UI via UIA, one Rust binary, no pointer steal.
+- [Gladius](https://github.com/nathwn12/gladius) — Gives an agent a real headless browser to test, screenshot, and check layout.
+- [Puppet](https://github.com/nathwn12/puppet) — Drives Windows apps without stealing focus or moving the pointer: screenshot, windows, input, and cursor over MCP.
 - [oc-collections](https://github.com/nathwn12/oc-collections) — Installs OpenCode plugins, MCP servers, and CLIs one package at a time.
 - [oc-templates](https://github.com/nathwn12/oc-templates) — Scaffolds an OpenCode v2 plugin with a dependency-free stdio MCP server.
 - [AIMP Discord Presence](https://github.com/nathwn12/aimp-discord-presence) — Shows the current AIMP track on Discord with artist, track, and album art.
@@ -41,5 +41,5 @@ I build and maintain projects independently, and publish packages on npm. Here a
 </p>
 
 <p align="center">
-  <sub>Built by <a href="https://github.com/nathwn12">nathwn12</a> · <a href="https://github.com/nathwn12?tab=repositories">All projects</a></sub>
+  <sub><a href="https://github.com/nathwn12?tab=repositories">All projects</a></sub>
 </p>
