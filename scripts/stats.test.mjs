@@ -107,11 +107,20 @@ test('README counts the ten published npm packages including hand-mcp', async ()
   assert.ok(links.includes('hand-mcp'), 'hand-mcp must appear in the package list')
 })
 
-test('README leads the project list with the shipped hand MCP server', async () => {
+test('README leads with Hand as a browser and Windows MCP server', async () => {
   const text = await readme()
   const section = text.slice(text.indexOf('## Selected projects'), text.indexOf('## Open source'))
   const first = section.split('\n').find((line) => line.startsWith('- '))
-  assert.match(first, /\[Hand\]\(https:\/\/github\.com\/nathwn12\/hand\)/)
-  assert.match(first, /npm-published/)
-  assert.match(first, /released this week/)
+
+  assert.ok(first, 'the Selected projects section must list a project')
+  assert.match(
+    first,
+    /^- \[Hand\]\(https:\/\/github\.com\/nathwn12\/hand\)\s/,
+    'Hand must lead the list with its correct project link'
+  )
+  assert.match(first, /browser automation/i, 'Hand must describe browser automation')
+  assert.match(first, /windows computer use/i, 'Hand must describe Windows computer use')
+  assert.match(first, /MCP server/i, 'Hand must identify as an MCP server')
+  assert.match(first, /CDP|DevTools Protocol/i, 'Hand must name its headless browser transport')
+  assert.match(first, /UIA|UI Automation/i, 'Hand must name its native Windows UI transport')
 })
