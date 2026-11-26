@@ -1,0 +1,23 @@
+name: docs-report
+
+# Phase-1 documentation gate. Rollout rule: report mode first, strict only
+# when the report is clean. The adoption report was clean (0 findings), so
+# this step runs --strict; revert to --report if a future report goes red.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  docs-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '26'
+      - name: Documentation gate
+        run: node docs-check.mjs --config docs-check.json --strict
