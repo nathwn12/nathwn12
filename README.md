@@ -32,9 +32,9 @@ Backend development, APIs, databases, authentication, and frontend applications.
 
 ## Open source
 
-I build and maintain projects independently, and publish packages on npm. Here are ten packages I maintain:
+I build and maintain projects independently, and publish packages on npm. Here are twelve packages I maintain:
 
-[hand-mcp](https://www.npmjs.com/package/hand-mcp) · [gladius-mcp](https://www.npmjs.com/package/gladius-mcp) · [puppet-mcp](https://www.npmjs.com/package/puppet-mcp) · [@nathwn12/janua](https://www.npmjs.com/package/@nathwn12/janua) · [@nathwn12/oc-bifrost](https://www.npmjs.com/package/@nathwn12/oc-bifrost) · [oc-flight-deck](https://www.npmjs.com/package/oc-flight-deck) · [oc-harness-setup](https://www.npmjs.com/package/oc-harness-setup) · [oc-plugin-view](https://www.npmjs.com/package/oc-plugin-view) · [oc-talk](https://www.npmjs.com/package/oc-talk) · [rea-shim](https://www.npmjs.com/package/rea-shim)
+[hand-mcp](https://www.npmjs.com/package/hand-mcp) · [gladius-mcp](https://www.npmjs.com/package/gladius-mcp) · [puppet-mcp](https://www.npmjs.com/package/puppet-mcp) · [@nathwn12/janua](https://www.npmjs.com/package/@nathwn12/janua) · [@nathwn12/oc-bifrost](https://www.npmjs.com/package/@nathwn12/oc-bifrost) · [oc-flight-deck](https://www.npmjs.com/package/oc-flight-deck) · [oc-harness-setup](https://www.npmjs.com/package/oc-harness-setup) · [oc-plugin-view](https://www.npmjs.com/package/oc-plugin-view) · [oc-talk](https://www.npmjs.com/package/oc-talk) · [rea-shim](https://www.npmjs.com/package/rea-shim) · [oc-phone-link](https://www.npmjs.com/package/oc-phone-link) · [oc-title](https://www.npmjs.com/package/oc-title)
 
 <p align="center">
   <img src="assets/stats.svg" alt="npm downloads for the last 30 days and all time, GitHub contributions and commits for the last 12 months, and daily contributions for the last 30 days" />

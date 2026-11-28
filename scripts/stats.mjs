@@ -8,7 +8,7 @@ import process from 'node:process'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
 const USER = 'nathwn12'
-const PACKAGES = [
+export const PACKAGES = [
   'gladius-mcp',
   'hand-mcp',
   'puppet-mcp',
@@ -18,7 +18,9 @@ const PACKAGES = [
   'oc-harness-setup',
   'oc-plugin-view',
   'oc-talk',
-  'rea-shim'
+  'rea-shim',
+  'oc-phone-link',
+  'oc-title'
 ]
 const NPM_RANGES = { week: 'last-week', month: 'last-month' }
 const DAY_MS = 86400000
@@ -100,9 +102,10 @@ export async function allTimeDownloads(pkg, through, getJson = npmFetch) {
     throw new Error(`npm registry metadata is incomplete for ${pkg}`)
   }
   let start = metadata.time.created.slice(0, 10)
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(start) || Number.isNaN(Date.parse(`${start}T00:00:00Z`)) || start > through) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(start) || Number.isNaN(Date.parse(`${start}T00:00:00Z`))) {
     throw new Error(`invalid registration date for ${pkg}`)
   }
+  if (start > through) return 0 // package did not exist in the through window
   let total = 0
   while (start <= through) {
     const limit = addDays(start, 364)
