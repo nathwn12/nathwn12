@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import { levelFor, recentDays, renderCard } from './stats.mjs'
+import { levelFor, recentDays, renderCard, PACKAGES } from './stats.mjs'
 
 const daysEndingAt = (last, counts = {}) =>
   Array.from({ length: 40 }, (_, index) => {
@@ -86,11 +86,11 @@ test('renderCard keeps the four headline numbers and the npm date', () => {
   assert.match(svg, /through 2026-10-30/)
 })
 
-test('renderCard labels npm totals with the measured ten packages', () => {
+test('renderCard labels npm totals with the tracked packages', () => {
   const svg = card(recentDays(daysEndingAt('2026-11-16')))
-  assert.match(svg, /30 days · 10 packages/)
-  assert.match(svg, /all-time · 10 packages/)
-  assert.match(svg, /across 10 packages through 2026-10-30/)
+  assert.match(svg, new RegExp('30 days · ' + PACKAGES.length + ' packages'))
+  assert.match(svg, new RegExp('all-time · ' + PACKAGES.length + ' packages'))
+  assert.match(svg, new RegExp('across ' + PACKAGES.length + ' packages through 2026-10-30'))
 })
 
 test('renderCard rejects an activity list that is not 30 days', () => {
@@ -99,11 +99,12 @@ test('renderCard rejects an activity list that is not 30 days', () => {
 
 const readme = () => readFile(new URL('../README.md', import.meta.url), 'utf8')
 
-test('README counts the ten published npm packages including hand-mcp', async () => {
+test('README counts the published npm packages including hand-mcp', async () => {
   const text = await readme()
-  assert.match(text, /ten packages I maintain/)
+  assert.match(text, /twelve packages I maintain/)
   const links = [...text.matchAll(/npmjs\.com\/package\/([^)]+)/g)].map((match) => match[1])
-  assert.equal(links.length, 10, 'the README must list all ten published packages')
+  assert.equal(PACKAGES.length, 12, 'the renderer must track twelve published packages')
+  assert.equal(links.length, PACKAGES.length, 'the README must list every package the renderer tracks')
   assert.ok(links.includes('hand-mcp'), 'hand-mcp must appear in the package list')
 })
 
